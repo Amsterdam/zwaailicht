@@ -11,4 +11,8 @@ class PandStatusViewSet(viewsets.ViewSet):
         return Response("Gebruik de url /pand_status/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
-        return Response()
+        return Response(data={
+            'locatie': {
+                'bag_id': pk,
+            },
+        })
