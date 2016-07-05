@@ -25,3 +25,6 @@ class Mapping(object):
 
     def pand_status_to_status_pand(self, pand_status):
         return self._get_indicator('Status pand', 'Pand.Pandstatus', pand_status)
+
+    def json(self):
+        return self.mapping

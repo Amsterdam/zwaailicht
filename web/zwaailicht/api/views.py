@@ -4,6 +4,20 @@ from rest_framework.response import Response
 from . import mapping
 
 
+class MappingViewSet(viewsets.ViewSet):
+    """
+    Dit JSON document wordt gebruikt om verschillende codes te mappen naar indicatoren. Gebruik onderstaand
+    bestand als uitgangspunt indien er wijzigingen nodig zijn.
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.mapping = mapping.Mapping()
+
+    def list(self, request, **kwargs):
+        return Response(self.mapping.json())
+
+
 class PandStatusViewSet(viewsets.ViewSet):
     """
     De pand status geeft een overzicht van eigenschappen van het pand.

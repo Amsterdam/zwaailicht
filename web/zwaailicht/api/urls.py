@@ -20,6 +20,7 @@ class ZwaailichtRouter(routers.DefaultRouter):
 
 
 router = ZwaailichtRouter()
+router.register('mapping', views.MappingViewSet, base_name='mapping')
 router.register('status_pand', views.PandStatusViewSet, base_name='status_pand')
 
 
