@@ -30,6 +30,11 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+PROJECT_APPS = [
+    'api',
+]
+
+
 INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,9 +44,9 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'corsheaders',
+    'django_jenkins',
 
-    'api',
-]
+] + PROJECT_APPS
 
 MIDDLEWARE_CLASSES = [
     'django.contrib.sessions.middleware.SessionMiddleware',
