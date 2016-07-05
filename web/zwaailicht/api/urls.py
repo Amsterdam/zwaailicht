@@ -20,6 +20,6 @@ class ZwaailichtRouter(routers.DefaultRouter):
 
 
 router = ZwaailichtRouter()
-router.register('pand_status', views.PandStatusViewSet, base_name='pand_status')
+router.register('status_pand', views.PandStatusViewSet, base_name='status_pand')
 
 

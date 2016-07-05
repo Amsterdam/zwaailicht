@@ -8,7 +8,7 @@ class PandStatusViewSet(viewsets.ViewSet):
     """
 
     def list(self, request):
-        return Response("Gebruik de url /pand_status/{bag_id} om gedetailleerde informatie terug te krijgen.")
+        return Response("Gebruik de url /status_pand/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
         return Response(data={
@@ -16,6 +16,11 @@ class PandStatusViewSet(viewsets.ViewSet):
                 'bag_id': pk,
             },
             'indicatoren': [
-
+                {
+                    'indicator': 'Status pand',
+                    'waarschuwingsniveau': 1,
+                    'label': 'Beperking pand',
+                    'aanvullende_informatie': 'Splitsing pand zonder vergunning [Status]',
+                }
             ],
         })
