@@ -17,3 +17,9 @@ class PandStatusTest(APITestCase):
         self.assertIn('locatie', response.data)
         self.assertIn('bag_id', response.data['locatie'])
         self.assertEqual('0363010003761571', response.data['locatie']['bag_id'])
+
+    def test_response_contains_notificaties(self):
+        response = self.client.get('/zwaailicht/pand_status/0363010003761571/')
+        self.assertIn('indicatoren', response.data)
+        self.assertListEqual([], response.data['indicatoren'])
+

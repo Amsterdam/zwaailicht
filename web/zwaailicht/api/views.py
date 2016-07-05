@@ -15,4 +15,7 @@ class PandStatusViewSet(viewsets.ViewSet):
             'locatie': {
                 'bag_id': pk,
             },
+            'indicatoren': [
+
+            ],
         })
