@@ -1,3 +1,6 @@
+import json
+
+from django.http import HttpResponse
 from rest_framework import viewsets
 from rest_framework.response import Response
 
@@ -39,3 +42,12 @@ class PandStatusViewSet(viewsets.ViewSet):
                 self.mapping.beperking_to_status_pand('HS'),
             ],
         })
+
+
+def health_check(request):
+    result = "OK"
+    status = 200
+
+    return HttpResponse(json.dumps(result),
+                        status=status,
+                        content_type="application/json")
