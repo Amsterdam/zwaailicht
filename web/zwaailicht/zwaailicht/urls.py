@@ -1,8 +1,10 @@
 """
 zwaailicht URL Configuration
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
+
+import api.urls
 
 urlpatterns = [
-#    url(r'^admin/', admin.site.urls),
+    url(r'^zwaailicht/', include(api.urls.router.urls)),
 ]
