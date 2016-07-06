@@ -8,6 +8,8 @@ node {
     } else {
         INVENTORY = "acceptance"
     }
+    echo "Branch is ${BRANCH}"
+    echo "Inventory is ${INVENTORY}"
 
 
     stage "Checkout"
