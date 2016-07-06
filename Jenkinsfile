@@ -2,8 +2,7 @@
 
 node {
 
-    IMAGE = "admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht"
-    TAG = "${env.BRANCH}"
+    BRANCH = "${env.BRANCH}"
 
     stage "Checkout"
         checkout scm
@@ -25,12 +24,10 @@ node {
 
     stage "Build"
 
-        sh "docker build -t ${IMAGE}:${TAG} --pull=true web"
-        sh "docker push ${IMAGE}:${TAG}"
+        image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht", "web")
+        image.push(BRANCH)
 
-        if (TAG.equals("master")) {
-            sh "docker tag ${IMAGE}:${TAG} ${IMAGE}:latest"
-            sh "docker push ${IMAGE}:latest"
+        if (BRANCH.equals("master")) {
+            image.push("latest")
         }
-
 }
