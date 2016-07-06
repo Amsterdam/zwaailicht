@@ -3,8 +3,15 @@ Zwaailicht Service
 
 De zwaailicht service is een REST API die op basis van de BAG+ en de WKPB pand-informatie verzamelt. 
 
-Getting started
----------------
+
+Requirements
+------------
+
+* [docker-compose](https://docs.docker.com/compose/)
+
+
+Developing
+----------
 
 	docker-compose up --build -d
 
