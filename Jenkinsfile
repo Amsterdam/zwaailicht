@@ -24,8 +24,8 @@ node {
 
     stage "Build"
 
-        image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht", "web")
-        image.push(BRANCH)
+        image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BRANCH}", "web")
+        image.push()
 
         if (BRANCH.equals("master")) {
             image.push("latest")
