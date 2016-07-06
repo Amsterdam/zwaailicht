@@ -2,8 +2,9 @@
 
 node {
 
-    BRANCH = "${env.BRANCH}"
-    if (BRANCH.equals("master")) {
+    String BRANCH = "${env.BRANCH}"
+    
+    if (BRANCH == "master") {
         INVENTORY = "production"
     } else {
         INVENTORY = "acceptance"
@@ -35,7 +36,7 @@ node {
         def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BRANCH}", "web")
         image.push()
 
-        if (BRANCH.equals("master")) {
+        if (BRANCH == "master") {
             image.push("latest")
         }
 
