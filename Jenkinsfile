@@ -3,15 +3,7 @@
 node {
 
     String BRANCH = "${env.BRANCH_NAME}"
-    
-    if (BRANCH == "master") {
-        INVENTORY = "production"
-    } else {
-        INVENTORY = "acceptance"
-    }
-    echo "Branch is ${BRANCH}"
-    echo "Inventory is ${INVENTORY}"
-
+    String INVENTORY = (BRANCH == "master" ? "production" : "acceptance")
 
     stage "Checkout"
         checkout scm
