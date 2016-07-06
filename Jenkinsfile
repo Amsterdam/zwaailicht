@@ -1,10 +1,10 @@
 #!groovy
 
 node {
+    stage 'Test'
 
-    stage 'Build'
+    sh 'docker-compose build'
+    sh 'docker-compose run -u root web python manage.py jenkins'
 
-        image = docker.build('datapunt/zwaailicht:${env.BUILD_NUMBER}')
-
-
+    step([$class: 'JUnitResultArchiver', testResults: 'reports/junit.xml'])
 }
