@@ -1,12 +1,15 @@
 #!groovy
 
 node {
+    stage 'Checkout'
+        checkout scm
+
     stage 'Test'
 
-    git url: 'https://github.com/DatapuntAmsterdam/zwaailicht'
+        sh 'docker-compose build'
+        sh 'docker-compose run -u root web python manage.py jenkins'
 
-    sh 'docker-compose build'
-    sh 'docker-compose run -u root web python manage.py jenkins'
+        step([$class: 'JUnitResultArchiver', testResults: 'reports/junit.xml'])
 
-    step([$class: 'JUnitResultArchiver', testResults: 'reports/junit.xml'])
+    
 }
