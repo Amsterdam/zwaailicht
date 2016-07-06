@@ -3,7 +3,7 @@
 node {
 
     BRANCH = "${env.BRANCH}"
-    if (branch.equals("master")) {
+    if (BRANCH.equals("master")) {
         INVENTORY = "production"
     } else {
         INVENTORY = "acceptance"
