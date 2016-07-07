@@ -2,7 +2,7 @@ import logging
 
 import requests
 
-VBO_URL = "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/{}/"
+VBO_URL = "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/{}/"
 
 log = logging.getLogger(__name__)
 
