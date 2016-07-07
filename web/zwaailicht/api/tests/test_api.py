@@ -1,10 +1,12 @@
+from django.test import override_settings
 from rest_framework.test import APITestCase
 
 from api.tests.fixtures import patch_requests
 
 
+@patch_requests
+@override_settings(VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/")
 class PandStatusTest(APITestCase):
-    @patch_requests
     def test_simple_response(self):
         """
         Verify that the endpoint exists.
@@ -12,14 +14,12 @@ class PandStatusTest(APITestCase):
         response = self.client.get('/zwaailicht/status_pand/0363010000758545/')
         self.assertEquals(200, response.status_code)
 
-    @patch_requests
     def test_response_contains_locatie_met_bag_id(self):
         response = self.client.get('/zwaailicht/status_pand/0363010000758545/')
         self.assertIn('locatie', response.data)
         self.assertIn('bag_id', response.data['locatie'])
         self.assertEqual('0363010000758545', response.data['locatie']['bag_id'])
 
-    @patch_requests
     def test_response_contains_indicatoren(self):
         response = self.client.get('/zwaailicht/status_pand/0363010000758545/')
         self.assertIn('indicatoren', response.data)
@@ -32,7 +32,6 @@ class PandStatusTest(APITestCase):
         self.assertEqual('Beperking pand', indicatoren[0]['label'])
         self.assertEqual('Splitsing pand zonder vergunning [Status]', indicatoren[0]['aanvullende_informatie'])
 
-    @patch_requests
     def test_unknown_vbo_is_404(self):
         response = self.client.get('/zwaailicht/status_pand/1234/')
         self.assertEquals(404, response.status_code)

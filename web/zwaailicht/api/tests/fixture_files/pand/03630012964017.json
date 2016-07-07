@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "https://api.datapunt.amsterdam.nl/bag/pand/03630012964017/"
+            "href": "http://api/bag/pand/03630012964017/"
         }
     },
     "_display": "0363100012112318",
@@ -47,12 +47,12 @@
     "pandnummer": "",
     "verblijfsobjecten": {
         "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/?panden__id=03630012964017"
+        "href": "http://api/bag/verblijfsobject/?panden__id=03630012964017"
     },
     "bouwblok": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012101021/"
+                "href": "http://api/gebieden/bouwblok/03630012101021/"
             }
         },
         "_display": "DE78",
@@ -65,7 +65,7 @@
     "_buurt": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000536/"
+                "href": "http://api/gebieden/buurt/03630000000536/"
             }
         },
         "_display": "Sloterdijk III West (F11d)",
@@ -76,7 +76,7 @@
     "_buurtcombinatie": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052012/"
+                "href": "http://api/gebieden/buurtcombinatie/3630012052012/"
             }
         },
         "_display": "Bedrijventerrein Sloterdijk (11)",
@@ -86,7 +86,7 @@
     "_stadsdeel": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630011872037/"
+                "href": "http://api/gebieden/stadsdeel/03630011872037/"
             }
         },
         "_display": "Nieuw-West",
@@ -97,7 +97,7 @@
     "_gemeente": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+                "href": "http://api/brk/gemeente/03630000000000/"
             }
         },
         "_display": "Amsterdam",

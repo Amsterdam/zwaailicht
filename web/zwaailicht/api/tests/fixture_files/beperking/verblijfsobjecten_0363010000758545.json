@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000758545"
+            "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630000758545"
         },
         "next": {
             "href": null
@@ -15,7 +15,7 @@
         {
             "_links": {
                 "self": {
-                    "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/3488/"
+                    "href": "http://api/wkpb/beperking/3488/"
                 }
             },
             "_display": "Huisvestingsverordening, splitsingsvergunningstelsel, Huisvestingswet",

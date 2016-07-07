@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630000998532/"
+            "href": "http://api/bag/verblijfsobject/03630000998532/"
         }
     },
     "_display": "Abberdaan 204",
@@ -66,7 +66,7 @@
     "hoofdadres": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000481756/"
+                "href": "http://api/bag/nummeraanduiding/03630000481756/"
             }
         },
         "_display": "Abberdaan 204",
@@ -76,12 +76,12 @@
     },
     "adressen": {
         "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000998532"
+        "href": "http://api/bag/nummeraanduiding/?verblijfsobject=03630000998532"
     },
     "buurt": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000536/"
+                "href": "http://api/gebieden/buurt/03630000000536/"
             }
         },
         "_display": "Sloterdijk III West (F11d)",
@@ -91,24 +91,24 @@
     },
     "panden": {
         "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000998532"
+        "href": "http://api/bag/pand/?verblijfsobjecten__id=03630000998532"
     },
     "kadastrale_objecten": {
         "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000998532"
+        "href": "http://api/brk/object/?verblijfsobjecten__id=03630000998532"
     },
     "rechten": {
         "count": 7,
-        "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000998532"
+        "href": "http://api/brk/zakelijk-recht/?verblijfsobjecten__id=03630000998532"
     },
     "beperkingen": {
         "count": 0,
-        "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000998532"
+        "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630000998532"
     },
     "bouwblok": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012101021/"
+                "href": "http://api/gebieden/bouwblok/03630012101021/"
             }
         },
         "_display": "DE78",
@@ -118,7 +118,7 @@
     "_buurtcombinatie": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052012/"
+                "href": "http://api/gebieden/buurtcombinatie/3630012052012/"
             }
         },
         "_display": "Bedrijventerrein Sloterdijk (11)",
@@ -128,7 +128,7 @@
     "_stadsdeel": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630011872037/"
+                "href": "http://api/gebieden/stadsdeel/03630011872037/"
             }
         },
         "_display": "Nieuw-West",
@@ -139,7 +139,7 @@
     "_gemeente": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+                "href": "http://api/brk/gemeente/03630000000000/"
             }
         },
         "_display": "Amsterdam",
@@ -149,7 +149,7 @@
     "_woonplaats": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+                "href": "http://api/bag/woonplaats/03630022796658/"
             }
         },
         "_display": "Amsterdam",

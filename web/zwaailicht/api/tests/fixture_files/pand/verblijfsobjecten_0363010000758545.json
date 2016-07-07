@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000758545"
+            "href": "http://api/bag/pand/?verblijfsobjecten__id=03630000758545"
         },
         "next": {
             "href": null
@@ -15,7 +15,7 @@
         {
             "_links": {
                 "self": {
-                    "href": "https://api.datapunt.amsterdam.nl/bag/pand/03630013059145/"
+                    "href": "http://api/bag/pand/03630013059145/"
                 }
             },
             "_display": "0363100012167579",

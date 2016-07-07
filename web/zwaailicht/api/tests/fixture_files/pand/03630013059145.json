@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "https://api.datapunt.amsterdam.nl/bag/pand/03630013059145/"
+            "href": "http://api/bag/pand/03630013059145/"
         }
     },
     "_display": "0363100012167579",
@@ -262,13 +262,13 @@
     "laagste_bouwlaag": null,
     "pandnummer": "",
     "verblijfsobjecten": {
-        "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/?panden__id=03630013059145",
+        "href": "http://api/bag/verblijfsobject/?panden__id=03630013059145",
         "count": 1
     },
     "bouwblok": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012100975/"
+                "href": "http://api/gebieden/bouwblok/03630012100975/"
             }
         },
         "_display": "YB47",
@@ -281,7 +281,7 @@
     "_buurt": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000087/"
+                "href": "http://api/gebieden/buurt/03630000000087/"
             }
         },
         "_display": "Nieuwe Kerk e.o. (A01e)",
@@ -292,7 +292,7 @@
     "_buurtcombinatie": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052035/"
+                "href": "http://api/gebieden/buurtcombinatie/3630012052035/"
             }
         },
         "_display": "Burgwallen-Nieuwe Zijde (01)",
@@ -302,7 +302,7 @@
     "_stadsdeel": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000018/"
+                "href": "http://api/gebieden/stadsdeel/03630000000018/"
             }
         },
         "_display": "Centrum",
@@ -313,7 +313,7 @@
     "_gemeente": {
         "_links": {
             "self": {
-                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+                "href": "http://api/brk/gemeente/03630000000000/"
             }
         },
         "_display": "Amsterdam",

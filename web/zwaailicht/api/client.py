@@ -1,8 +1,7 @@
 import logging
 
 import requests
-
-VBO_URL = "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/{}/"
+from django.conf import settings
 
 log = logging.getLogger(__name__)
 
@@ -36,6 +35,7 @@ class Beperking(object):
     """
     Wrapper object for WKPB Beperking JSON
     """
+
     def __init__(self, json):
         self._json = json
         self.beperking = json.get('beperkingcode', {}).get('code')
@@ -57,7 +57,7 @@ class Client(object):
         """
         assert landelijk_id is not None
 
-        url = VBO_URL.format(landelijk_id)
+        url = settings.VBO_URI_TEMPLATE.format(landelijk_id=landelijk_id)
 
         res = requests.get(url)
         if not res.ok:
