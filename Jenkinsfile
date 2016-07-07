@@ -5,10 +5,12 @@ node {
     String BRANCH = "${env.BRANCH_NAME}"
     String INVENTORY = (BRANCH == "master" ? "production" : "acceptance")
 
-    stage "Checkout"
+    try {
+
+        stage "Checkout"
         checkout scm
 
-    stage "Test"
+        stage "Test"
 
         try {
             sh "docker-compose build"
@@ -23,7 +25,7 @@ node {
         }
 
 
-    stage "Build"
+        stage "Build"
 
         def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BRANCH}", "web")
         image.push()
@@ -32,7 +34,7 @@ node {
             image.push("latest")
         }
 
-    stage "Deploy"
+        stage "Deploy"
 
         build job: 'Subtask_Openstack_Playbook',
                 parameters: [
@@ -40,4 +42,10 @@ node {
                         [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
                         [$class: 'StringParameterValue', name: 'BRANCH', value: BRANCH],
                 ]
+    }
+    catch(err) {
+        slackSend "Problem while building Zwaailicht service: ${err}"
+
+        throw err
+    }
 }
