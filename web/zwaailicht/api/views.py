@@ -1,9 +1,10 @@
 import json
 
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from rest_framework import viewsets
 from rest_framework.response import Response
 
+from . import client
 from . import mapping
 
 
@@ -29,18 +30,37 @@ class PandStatusViewSet(viewsets.ViewSet):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.mapping = mapping.Mapping()
+        self.client = client.Client()
 
     def list(self, request):
         return Response("Gebruik de url /status_pand/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
+        indicatoren = []
+
+        vbo = self.client.get_vbo(pk)
+        if not vbo:
+            raise Http404()
+
+        panden = self.client.get_panden(vbo)
+        pand_status = [p.pand_status for p in panden]
+        for s in pand_status:
+            mapped = self.mapping.pand_status_to_status_pand(s)
+            if mapped:
+                indicatoren.append(mapped)
+
+        beperkingen = self.client.get_beperkingen(vbo)
+        beperking_codes = [b.beperking for b in beperkingen]
+        for c in beperking_codes:
+            mapped = self.mapping.beperking_to_status_pand(c)
+            if mapped:
+                indicatoren.append(mapped)
+
         return Response(data={
             'locatie': {
                 'bag_id': pk,
             },
-            'indicatoren': [
-                self.mapping.beperking_to_status_pand('HS'),
-            ],
+            'indicatoren': indicatoren,
         })
 
 

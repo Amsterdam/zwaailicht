@@ -2,3 +2,4 @@ Django==1.9.7
 django-cors-headers==1.1.0
 django-jenkins==0.18.1
 djangorestframework==3.3.3
+requests==2.10.0

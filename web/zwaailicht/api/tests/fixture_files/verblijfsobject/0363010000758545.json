@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630000758545/"
+        }
+    },
+    "_display": "Nieuwezijds Voorburgwal 147",
+    "sleutelverzendend": "03630000758545",
+    "verblijfsobjectidentificatie": "0363010000758545",
+    "date_modified": "2016-07-06T22:12:48.849419Z",
+    "document_mutatie": "2010-09-09",
+    "document_nummer": "GV00000406",
+    "begin_geldigheid": "2010-09-09",
+    "einde_geldigheid": null,
+    "mutatie_gebruiker": "DBI",
+    "status": {
+        "code": "21",
+        "omschrijving": "Verblijfsobject in gebruik"
+    },
+    "bron": null,
+    "geometrie": {
+        "type": "Point",
+        "coordinates": [
+            121202.0,
+            487370.0
+        ]
+    },
+    "gebruiksdoel": {
+        "omschrijving": "BEST-bijeenkomstfunctie",
+        "code": "1100"
+    },
+    "oppervlakte": 22214,
+    "bouwlaag_toegang": null,
+    "status_coordinaat": {
+        "omschrijving": "Definitief punt",
+        "code": "DEF"
+    },
+    "verhuurbare_eenheden": null,
+    "bouwlagen": null,
+    "type_woonobject": {
+        "omschrijving": "",
+        "code": ""
+    },
+    "woningvoorraad": false,
+    "aantal_kamers": null,
+    "reden_afvoer": null,
+    "reden_opvoer": null,
+    "eigendomsverhouding": {
+        "code": "01",
+        "omschrijving": "Huur"
+    },
+    "financieringswijze": null,
+    "gebruik": {
+        "code": "3410",
+        "omschrijving": "cultuur"
+    },
+    "ligging": {
+        "code": "01",
+        "omschrijving": "Vrijstaand gebouw"
+    },
+    "locatie_ingang": null,
+    "toegang": null,
+    "hoofdadres": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000218908/"
+            }
+        },
+        "_display": "Nieuwezijds Voorburgwal 147",
+        "landelijk_id": "0363200000218908",
+        "hoofdadres": true,
+        "dataset": "bag"
+    },
+    "adressen": {
+        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000758545",
+        "count": 1
+    },
+    "buurt": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000087/"
+            }
+        },
+        "_display": "Nieuwe Kerk e.o. (A01e)",
+        "code": "01e",
+        "naam": "Nieuwe Kerk e.o.",
+        "dataset": "gebieden"
+    },
+    "panden": {
+        "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000758545",
+        "count": 1
+    },
+    "kadastrale_objecten": {
+        "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000758545",
+        "count": 1
+    },
+    "rechten": {
+        "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000758545",
+        "count": 1
+    },
+    "beperkingen": {
+        "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000758545",
+        "count": 1
+    },
+    "bouwblok": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012100975/"
+            }
+        },
+        "_display": "YB47",
+        "id": "03630012100975",
+        "dataset": "gebieden"
+    },
+    "_buurtcombinatie": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052035/"
+            }
+        },
+        "_display": "Burgwallen-Nieuwe Zijde (01)",
+        "naam": "Burgwallen-Nieuwe Zijde",
+        "dataset": "gebieden"
+    },
+    "_stadsdeel": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000018/"
+            }
+        },
+        "_display": "Centrum",
+        "code": "A",
+        "naam": "Centrum",
+        "dataset": "gebieden"
+    },
+    "_gemeente": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+            }
+        },
+        "_display": "Amsterdam",
+        "code": "0363",
+        "dataset": "bag"
+    },
+    "_woonplaats": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+            }
+        },
+        "_display": "Amsterdam",
+        "landelijk_id": "3594",
+        "dataset": "bag"
+    },
+    "dataset": "bag"
+}

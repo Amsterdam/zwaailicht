@@ -1,0 +1,24 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/3488/"
+        }
+    },
+    "_display": "Huisvestingsverordening, splitsingsvergunningstelsel, Huisvestingswet",
+    "id": 3488,
+    "inschrijfnummer": 3851,
+    "datum_in_werking": "2010-01-01",
+    "datum_einde": null,
+    "kadastrale_objecten": {
+        "count": 260820,
+        "href": "https://api.datapunt.amsterdam.nl/brk/object/?beperkingen__id=3488"
+    },
+    "documenten": {
+        "count": 1,
+        "href": "https://api.datapunt.amsterdam.nl/wkpb/brondocument/?beperking=3488"
+    },
+    "beperkingcode": {
+        "code": "HS",
+        "omschrijving": "Huisvestingsverordening, splitsingsvergunningstelsel, Huisvestingswet"
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://api.datapunt.amsterdam.nl/bag/pand/03630012964017/"
+        }
+    },
+    "_display": "0363100012112318",
+    "sleutelverzendend": "03630012964017",
+    "pandidentificatie": "0363100012112318",
+    "date_modified": "2016-07-06T22:24:27.617344Z",
+    "document_mutatie": "2014-03-28",
+    "document_nummer": "GV00001868_AC00AC",
+    "status": {
+        "code": "31",
+        "omschrijving": "Pand in gebruik"
+    },
+    "geometrie": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    114061.436655672,
+                    489534.769726439
+                ],
+                [
+                    114047.276657087,
+                    489534.883726408
+                ],
+                [
+                    114047.234657102,
+                    489527.884727105
+                ],
+                [
+                    114061.398655686,
+                    489527.769727142
+                ],
+                [
+                    114061.436655672,
+                    489534.769726439
+                ]
+            ]
+        ]
+    },
+    "oorspronkelijk_bouwjaar": "2001",
+    "hoogste_bouwlaag": null,
+    "laagste_bouwlaag": null,
+    "pandnummer": "",
+    "verblijfsobjecten": {
+        "count": 1,
+        "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/?panden__id=03630012964017"
+    },
+    "bouwblok": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012101021/"
+            }
+        },
+        "_display": "DE78",
+        "id": "03630012101021",
+        "dataset": "gebieden"
+    },
+    "begin_geldigheid": "2014-03-28",
+    "einde_geldigheid": null,
+    "mutatie_gebruiker": "DBI",
+    "_buurt": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000536/"
+            }
+        },
+        "_display": "Sloterdijk III West (F11d)",
+        "code": "11d",
+        "naam": "Sloterdijk III West",
+        "dataset": "gebieden"
+    },
+    "_buurtcombinatie": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052012/"
+            }
+        },
+        "_display": "Bedrijventerrein Sloterdijk (11)",
+        "naam": "Bedrijventerrein Sloterdijk",
+        "dataset": "gebieden"
+    },
+    "_stadsdeel": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630011872037/"
+            }
+        },
+        "_display": "Nieuw-West",
+        "code": "F",
+        "naam": "Nieuw-West",
+        "dataset": "gebieden"
+    },
+    "_gemeente": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+            }
+        },
+        "_display": "Amsterdam",
+        "code": "0363",
+        "dataset": "bag"
+    },
+    "dataset": "bag"
+}
