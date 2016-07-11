@@ -74,3 +74,7 @@ class GebruikTest(APITestCase):
         response = self.client.get('/zwaailicht/gebruik/1234/')
         self.assertEquals(404, response.status_code)
 
+    def test_None_fields_is_200(self):
+        response = self.client.get('/zwaailicht/gebruik/0363010000686941/')
+        self.assertEquals(200, response.status_code)
+

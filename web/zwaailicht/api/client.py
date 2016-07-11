@@ -6,6 +6,18 @@ from django.conf import settings
 log = logging.getLogger(__name__)
 
 
+def _json(obj, *fields):
+    current = obj
+
+    for f in fields:
+        if not current:
+            return None
+
+        current = current.get(f)
+
+    return current
+
+
 class Verblijfsobject(object):
     """
     Wrapper object for VBO JSON
@@ -13,11 +25,11 @@ class Verblijfsobject(object):
 
     def __init__(self, json):
         self._json = json
-        self.landelijk_id = json.get('verblijfsobjectidentificatie')
-        self.panden = json.get('panden', {}).get('href')
-        self.beperkingen = json.get('beperkingen', {}).get('href')
-        self.gebruiksdoel = json.get('gebruiksdoel', {}).get('code')
-        self.gebruikscode = json.get('gebruik', {}).get('code')
+        self.landelijk_id = _json(json, 'verblijfsobjectidentificatie')
+        self.panden = _json(json, 'panden', 'href')
+        self.beperkingen = _json(json, 'beperkingen', 'href')
+        self.gebruiksdoel = _json(json, 'gebruiksdoel', 'code')
+        self.gebruikscode = _json(json, 'gebruik', 'code')
 
     def __str__(self):
         return "VBO({})".format(self.landelijk_id)
