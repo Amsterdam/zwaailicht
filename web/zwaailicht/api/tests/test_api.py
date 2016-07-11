@@ -35,3 +35,7 @@ class PandStatusTest(APITestCase):
     def test_unknown_vbo_is_404(self):
         response = self.client.get('/zwaailicht/status_pand/1234/')
         self.assertEquals(404, response.status_code)
+
+    def test_known_vbo_unknown_follow_is_200(self):
+        response = self.client.get('/zwaailicht/status_pand/0363010001958552/')
+        self.assertEquals(200, response.status_code)

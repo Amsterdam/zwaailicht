@@ -8,6 +8,8 @@ fixture_mappings = {
         'verblijfsobject/0363010000998532.json',
     'http://api/bag/verblijfsobject/0363010000758545/':
         'verblijfsobject/0363010000758545.json',
+    'http://api/bag/verblijfsobject/0363010001958552/':
+        'verblijfsobject/0363010001958552.json',
     'http://api/bag/pand/?verblijfsobjecten__id=03630000998532':
         'pand/verblijfsobjecten_0363010000998532.json',
     'http://api/bag/pand/?verblijfsobjecten__id=03630000758545':

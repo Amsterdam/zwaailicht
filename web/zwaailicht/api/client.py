@@ -95,6 +95,7 @@ class Client(object):
         res = requests.get(url)
         if not res.ok:
             log.warn("Could not retrieve beperkingen for VBO %s from %s", vbo, url)
+            return []
 
         beperking_urls = [obj.get('_links', {}).get('self', {}).get('href') for obj in res.json().get('results', [])]
         beperking_responses = [requests.get(u) for u in beperking_urls]
