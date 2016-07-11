@@ -119,11 +119,27 @@ class GebruikViewSet(viewsets.ViewSet):
              paramType: path
         serializer: Result
         """
+        indicatoren = []
+
+        vbo = self.client.get_vbo(pk)
+        if not vbo:
+            raise Http404()
+
+        gebruiksdoel = vbo.gebruiksdoel
+        mapped = self.mapping.gebruiksdoel_to_gebruik(gebruiksdoel)
+        if mapped:
+            indicatoren.append(mapped)
+
+        gebruikscode = vbo.gebruikscode
+        mapped = self.mapping.gebruikscode_to_gebruik(gebruikscode)
+        if mapped:
+            indicatoren.append(mapped)
+
         return Response(data={
             'locatie': {
                 'bag_id': pk,
             },
-            'indicatoren': []
+            'indicatoren': indicatoren
         })
 
 

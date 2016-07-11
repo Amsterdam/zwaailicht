@@ -16,6 +16,8 @@ class Verblijfsobject(object):
         self.landelijk_id = json.get('verblijfsobjectidentificatie')
         self.panden = json.get('panden', {}).get('href')
         self.beperkingen = json.get('beperkingen', {}).get('href')
+        self.gebruiksdoel = json.get('gebruiksdoel', {}).get('code')
+        self.gebruikscode = json.get('gebruik', {}).get('code')
 
     def __str__(self):
         return "VBO({})".format(self.landelijk_id)

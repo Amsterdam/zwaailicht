@@ -26,5 +26,11 @@ class Mapping(object):
     def pand_status_to_status_pand(self, pand_status):
         return self._get_indicator('Status pand', 'Pand.Pandstatus', pand_status)
 
+    def gebruikscode_to_gebruik(self, gebruikscode):
+        return self._get_indicator('Gebruik', 'Verblijfsobject.gebruikscode', gebruikscode)
+
+    def gebruiksdoel_to_gebruik(self, gebruiksdoel):
+        return self._get_indicator('Gebruik', 'Verblijfsobject.gebruiksdoel-plus', gebruiksdoel)
+
     def json(self):
         return self.mapping
