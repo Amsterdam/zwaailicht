@@ -42,6 +42,7 @@ INSTALLED_APPS = [
                      'rest_framework',
                      'corsheaders',
                      'django_jenkins',
+                     'rest_framework_swagger',
 
                  ] + PROJECT_APPS
 
