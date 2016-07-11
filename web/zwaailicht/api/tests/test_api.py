@@ -39,3 +39,15 @@ class PandStatusTest(APITestCase):
     def test_known_vbo_unknown_follow_is_200(self):
         response = self.client.get('/zwaailicht/status_pand/0363010001958552/')
         self.assertEquals(200, response.status_code)
+
+
+@patch_requests
+@override_settings(VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/")
+class GebruikTest(APITestCase):
+    def test_simple_response(self):
+        """
+        Verify that the endpoint exists
+        :return:
+        """
+        response = self.client.get('/zwaailicht/gebruik/0363010000758545/')
+        self.assertEquals(200, response.status_code)

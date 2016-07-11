@@ -24,7 +24,7 @@ class MappingViewSet(viewsets.ViewSet):
 
 class PandStatusViewSet(viewsets.ViewSet):
     """
-    De pand status geeft een overzicht van eigenschappen van het pand.
+    De pand status geeft een overzicht van eigenschappen van de panden die horen bij dit verblijfsobject.
     """
 
     def __init__(self, **kwargs):
@@ -61,6 +61,28 @@ class PandStatusViewSet(viewsets.ViewSet):
                 'bag_id': pk,
             },
             'indicatoren': indicatoren,
+        })
+
+
+class GebruikViewSet(viewsets.ViewSet):
+    """
+    Gebruik geeft informatie over het daadwerkelijk gebruik van een verblijfsobject.
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.mapping = mapping.Mapping()
+        self.client = client.Client()
+
+    def list(self, request):
+        return Response("Gebruik de url /gebruik/{bag_id} om gedetailleerde informatie terug te krijgen.")
+
+    def retrieve(self, request, pk=None):
+        return Response(data={
+            'locatie': {
+                'bag_id': pk,
+            },
+            'indicatoren': []
         })
 
 
