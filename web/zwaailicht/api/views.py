@@ -1,11 +1,32 @@
 import json
 
 from django.http import HttpResponse, Http404
-from rest_framework import viewsets
+from rest_framework import viewsets, serializers
 from rest_framework.response import Response
 
 from . import client
 from . import mapping
+
+
+# Note: these serializers are NEVER ACTUALLY USED. They are here so the Swagger generator
+# behaves as it should
+class Locatie(serializers.Serializer):
+    bag_id = serializers.CharField(min_length=16, max_length=16, help_text="Het opgevraagde BAG ID")
+
+
+class Indicator(serializers.Serializer):
+    indicator = serializers.ChoiceField(("pand_status", "gebruik",), help_text="Opgevraagde indicator")
+
+    waarschuwingsniveau = serializers.IntegerField(
+        help_text="1 (let op) of 2 (belangrijk). Originele indicatoren met waarde 0 worden nooit teruggegeven")
+
+    label = serializers.CharField(help_text="Korte toelichtende tekst")
+    aanvullende_informatie = serializers.CharField()
+
+
+class Result(serializers.Serializer):
+    locatie = Locatie(help_text="Een kopie van de originele opgevraagde locatie-gegevens")
+    indicatoren = Indicator(many=True, help_text="Een lijst met eventuele indicatoren voor dit verblijfsobject")
 
 
 class MappingViewSet(viewsets.ViewSet):
@@ -36,6 +57,16 @@ class PandStatusViewSet(viewsets.ViewSet):
         return Response("Gebruik de url /status_pand/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
+        """
+        ---
+        parameters:
+           - name: pk
+             description: Landelijk BAG ID van een verblijfsobject
+             required: true
+             type: string
+             paramType: path
+        serializer: Result
+        """
         indicatoren = []
 
         vbo = self.client.get_vbo(pk)
@@ -78,6 +109,16 @@ class GebruikViewSet(viewsets.ViewSet):
         return Response("Gebruik de url /gebruik/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
+        """
+        ---
+        parameters:
+           - name: pk
+             description: Landelijk BAG ID van een verblijfsobject
+             required: true
+             type: string
+             paramType: path
+        serializer: Result
+        """
         return Response(data={
             'locatie': {
                 'bag_id': pk,

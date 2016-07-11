@@ -43,6 +43,7 @@ INSTALLED_APPS = [
                      'corsheaders',
                      'django_jenkins',
                      'rest_framework_swagger',
+                     'django_extensions',
 
                  ] + PROJECT_APPS
 
@@ -116,3 +117,11 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 VBO_URI_TEMPLATE = os.environ.get('VBO_URI_TEMPLATE',
                                   "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/")
+
+SWAGGER_SETTINGS = {
+    'exclude_url_names': [
+        'api-root',
+        'status_pand-list',
+        'gebruik-list',
+    ],
+}
