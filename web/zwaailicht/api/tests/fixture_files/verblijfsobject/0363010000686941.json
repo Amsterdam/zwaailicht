@@ -1,0 +1,154 @@
+{
+    "_links": {
+        "self": {
+            "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630000686941/"
+        }
+    },
+    "_display": "Jan Tooropstraat 164",
+    "sleutelverzendend": "03630000686941",
+    "verblijfsobjectidentificatie": "0363010000686941",
+    "date_modified": "2016-07-10T22:11:44.330560Z",
+    "document_mutatie": "2016-04-12",
+    "document_nummer": "MB02154445",
+    "begin_geldigheid": "2016-04-12",
+    "einde_geldigheid": null,
+    "mutatie_gebruiker": "DBI",
+    "status": {
+        "code": "21",
+        "omschrijving": "Verblijfsobject in gebruik"
+    },
+    "bron": null,
+    "geometrie": {
+        "type": "Point",
+        "coordinates": [
+            117679.0,
+            487184.0
+        ]
+    },
+    "gebruiksdoel": {
+        "code": "1300",
+        "omschrijving": "BEST-gezondheidsfunctie"
+    },
+    "oppervlakte": 73805,
+    "bouwlaag_toegang": 0,
+    "status_coordinaat": {
+        "code": "DEF",
+        "omschrijving": "Definitief punt"
+    },
+    "verhuurbare_eenheden": null,
+    "bouwlagen": null,
+    "type_woonobject": {
+        "code": "",
+        "omschrijving": ""
+    },
+    "woningvoorraad": false,
+    "aantal_kamers": null,
+    "reden_afvoer": null,
+    "reden_opvoer": null,
+    "eigendomsverhouding": null,
+    "financieringswijze": null,
+    "gebruik": null,
+    "ligging": {
+        "code": "01",
+        "omschrijving": "Vrijstaand gebouw"
+    },
+    "locatie_ingang": null,
+    "toegang": {
+        "code": "08",
+        "omschrijving": "Begane grond (08)"
+    },
+    "hoofdadres": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000148754/"
+            }
+        },
+        "_display": "Jan Tooropstraat 164",
+        "landelijk_id": "0363200000148754",
+        "hoofdadres": true,
+        "dataset": "bag"
+    },
+    "adressen": {
+        "count": 1,
+        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000686941"
+    },
+    "buurt": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000470/"
+            }
+        },
+        "_display": "Lucas/Andreasziekenhuis e.o. (F86f)",
+        "code": "86f",
+        "naam": "Lucas/Andreasziekenhuis e.o.",
+        "dataset": "gebieden"
+    },
+    "panden": {
+        "count": 1,
+        "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000686941"
+    },
+    "kadastrale_objecten": {
+        "count": 1,
+        "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000686941"
+    },
+    "rechten": {
+        "count": 2,
+        "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000686941"
+    },
+    "beperkingen": {
+        "count": 0,
+        "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000686941"
+    },
+    "bouwblok": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012097250/"
+            }
+        },
+        "_display": "EA04",
+        "id": "03630012097250",
+        "dataset": "gebieden"
+    },
+    "_buurtcombinatie": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052083/"
+            }
+        },
+        "_display": "Overtoomse Veld (86)",
+        "naam": "Overtoomse Veld",
+        "dataset": "gebieden"
+    },
+    "_stadsdeel": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630011872037/"
+            }
+        },
+        "_display": "Nieuw-West",
+        "code": "F",
+        "naam": "Nieuw-West",
+        "dataset": "gebieden"
+    },
+    "_gemeente": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+            }
+        },
+        "_display": "Amsterdam",
+        "code": "0363",
+        "dataset": "bag"
+    },
+    "_woonplaats": {
+        "_links": {
+            "self": {
+                "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+            }
+        },
+        "_display": "Amsterdam",
+        "landelijk_id": "3594",
+        "dataset": "bag"
+    },
+    "dataset": "bag"
+}

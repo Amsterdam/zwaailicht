@@ -1,4 +1,4 @@
-from unittest import TestCase
+from django.test import TestCase
 
 from .. import mapping
 
@@ -45,7 +45,23 @@ class MappingTest(TestCase):
     def test_pand_status_unknown(self):
         self.assertIsNone(self.mapping.pand_status_to_status_pand("IK_BEN_OOK_GEEN_CODE"))
 
+    def test_gebruikscode_3333(self):
+        indicator = self.mapping.gebruikscode_to_gebruik('3333')
+        self.assertDictEqual({
+            'indicator': 'Gebruik',
+            "label": "Kwetsbare doelgroep",
+            "aanvullende_informatie": "medisch dagverblijf",
+            "waarschuwingsniveau": 2
+        }, indicator)
 
+    def test_gebruiksdoel_1043(self):
+        indicator = self.mapping.gebruiksdoel_to_gebruik('1043')
+        self.assertDictEqual({
+            "indicator": "Gebruik",
+            "label": "Woning met invalide(n)",
+            "aanvullende_informatie": "Invalideeenheid",
+            "waarschuwingsniveau": 2
+        }, indicator)
 
 
 

@@ -1,0 +1,25 @@
+{
+    "_links": {
+        "self": {
+            "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630000758545"
+        },
+        "next": {
+            "href": null
+        },
+        "previous": {
+            "href": null
+        }
+    },
+    "count": 1,
+    "results": [
+        {
+            "_links": {
+                "self": {
+                    "href": "http://api/wkpb/beperking/3488/"
+                }
+            },
+            "_display": "Huisvestingsverordening, splitsingsvergunningstelsel, Huisvestingswet",
+            "inschrijfnummer": 3851
+        }
+    ]
+}
