@@ -76,14 +76,14 @@ class PandStatusViewSet(viewsets.ViewSet):
         panden = self.client.get_panden(vbo)
         pand_status = [p.pand_status for p in panden]
         for s in pand_status:
-            mapped = self.mapping.pand_status_to_status_pand(s)
+            mapped = self.mapping.map_pand_status(s)
             if mapped:
                 indicatoren.append(mapped)
 
         beperkingen = self.client.get_beperkingen(vbo)
         beperking_codes = [b.beperking for b in beperkingen]
         for c in beperking_codes:
-            mapped = self.mapping.beperking_to_status_pand(c)
+            mapped = self.mapping.map_beperking(c)
             if mapped:
                 indicatoren.append(mapped)
 
@@ -126,12 +126,12 @@ class GebruikViewSet(viewsets.ViewSet):
             raise Http404()
 
         gebruiksdoel = vbo.gebruiksdoel
-        mapped = self.mapping.gebruiksdoel_to_gebruik(gebruiksdoel)
+        mapped = self.mapping.map_gebruiksdoel(gebruiksdoel)
         if mapped:
             indicatoren.append(mapped)
 
         gebruikscode = vbo.gebruikscode
-        mapped = self.mapping.gebruikscode_to_gebruik(gebruikscode)
+        mapped = self.mapping.map_gebruikscode(gebruikscode)
         if mapped:
             indicatoren.append(mapped)
 
