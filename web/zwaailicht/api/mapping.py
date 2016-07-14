@@ -14,22 +14,33 @@ class Mapping(object):
     def _get_indicator(self, indicator, field, value):
         result = self.mapping[indicator][field].get(str(value))
 
-        if not result:
+        if result and not result.get('waarschuwingsniveau'):
             return None
-        if not result.get('waarschuwingsniveau'):
-            return None
+
         return result
 
-    def beperking_to_status_pand(self, beperking_code):
+    def map_beperking(self, beperking_code):
+        """
+        Return the indicator associated with WKPB Beperking code, if any.
+        """
         return self._get_indicator('Status pand', 'Beperking.beperkingcode', beperking_code)
 
-    def pand_status_to_status_pand(self, pand_status):
+    def map_pand_status(self, pand_status):
+        """
+        Return the indicator associated with BAG Pand status code, if any.
+        """
         return self._get_indicator('Status pand', 'Pand.Pandstatus', pand_status)
 
-    def gebruikscode_to_gebruik(self, gebruikscode):
+    def map_gebruikscode(self, gebruikscode):
+        """
+        Return the indicator associated with BAG Verblijfsobject gebruikscode, if any.
+        """
         return self._get_indicator('Gebruik', 'Verblijfsobject.gebruikscode', gebruikscode)
 
-    def gebruiksdoel_to_gebruik(self, gebruiksdoel):
+    def map_gebruiksdoel(self, gebruiksdoel):
+        """
+        Return the indicator associated with BAG-plus Verblijfsobject gebruiksdoel, if any.
+        """
         return self._get_indicator('Gebruik', 'Verblijfsobject.gebruiksdoel-plus', gebruiksdoel)
 
     def json(self):
