@@ -1,1670 +1,1670 @@
 {
-  "Status pand": {
-    "Pand.Pandstatus": {
-      "24": {
-        "indicator": "Status pand",
-        "label": "Pand in bouwfase",
-        "aanvullende_informatie": "Pand in bouwfase [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "25": {
-        "indicator": "Status pand",
-        "label": "Pand in bouwfase",
-        "aanvullende_informatie": "Pand in bouwfase [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "26": {
-        "indicator": "Status pand",
-        "label": "Pand in bouwfase",
-        "aanvullende_informatie": "Pand in bouwfase [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "27": {
-        "indicator": "Status pand",
-        "label": "Pand in sloopfase",
-        "aanvullende_informatie": "Pand in sloopfase [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "32": {
-        "indicator": "Status pand",
-        "label": "Pand buiten gebruik",
-        "aanvullende_informatie": "Pand buiten gebruik [Status]",
-        "waarschuwingsniveau": 1
-      },
-      "31": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "30": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "28": {
-        "indicator": "Status pand",
-        "label": "Pand in sloopfase",
-        "aanvullende_informatie": "Pand gesloopt [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "29": {
-        "indicator": "Status pand",
-        "label": "Niet gerealiseerd pand",
-        "aanvullende_informatie": "Niet gerealiseerd pand [Status]",
-        "waarschuwingsniveau": 1
-      }
-    },
-    "Beperking.beperkingcode": {
-      "WG": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Plicht tot gebruik of beheer door derden [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "GU": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "GS": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Sluiting pand  [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "WA": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "OH": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "HS": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Splitsing pand zonder vergunning [Status]",
-        "waarschuwingsniveau": 1
-      },
-      "HV": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "WE": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "WI": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Sluiting pand  [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "GG": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Monument [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "WV": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Plicht tot het treffen van voorzieningen [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "WU": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Staat van het pand voldoet niet aan Woningwet  [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "WT": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "WS": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "GB": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "VV": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "VI": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "KW": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Melding, bevel of beschikking\u00a0Wet bodembescherming [Status]",
-        "waarschuwingsniveau": 1
-      },
-      "OS": {
-        "indicator": "Status pand",
-        "label": "Beperking pand",
-        "aanvullende_informatie": "Sluiting pand obv Opiumwet [Status]",
-        "waarschuwingsniveau": 2
-      },
-      "EP": {
-        "indicator": "Status pand",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      }
-    }
-  },
-  "Gebruik": {
-    "Verblijfsobject.gebruikscode": {
-      "2299": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + agrarische niet-woning (overig)",
-        "waarschuwingsniveau": 1
-      },
-      "3416": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bibliotheek",
-        "waarschuwingsniveau": 1
-      },
-      "3417": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kasteel / paleis",
-        "waarschuwingsniveau": 1
-      },
-      "3414": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "expositiehal / evenementenhal",
-        "waarschuwingsniveau": 1
-      },
-      "3415": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bioscoop",
-        "waarschuwingsniveau": 1
-      },
-      "3412": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "congresgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3413": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "museum",
-        "waarschuwingsniveau": 1
-      },
-      "3410": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "cultuur",
-        "waarschuwingsniveau": 1
-      },
-      "3411": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "schouwburg / concertgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3614": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "watertoren",
-        "waarschuwingsniveau": 1
-      },
-      "3419": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig cultureel",
-        "waarschuwingsniveau": 1
-      },
-      "2525": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + camping",
-        "waarschuwingsniveau": 1
-      },
-      "3129": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig horeca",
-        "waarschuwingsniveau": 1
-      },
-      "3218": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "tuincentrum",
-        "waarschuwingsniveau": 1
-      },
-      "3122": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "caf\u00e9 / bar / restaurant",
-        "waarschuwingsniveau": 1
-      },
-      "3123": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bar / dancing",
-        "waarschuwingsniveau": 1
-      },
-      "3120": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "horeca",
-        "waarschuwingsniveau": 1
-      },
-      "3121": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "cafetaria / snackbar",
-        "waarschuwingsniveau": 1
-      },
-      "3124": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "hotel / motel",
-        "waarschuwingsniveau": 1
-      },
-      "3125": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "pension / logiesgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "2248": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + intensieve veehouderij pluimvee",
-        "waarschuwingsniveau": 1
-      },
-      "3262": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "viskwekerij",
-        "waarschuwingsniveau": 1
-      },
-      "2244": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kaasboerderij",
-        "waarschuwingsniveau": 1
-      },
-      "2245": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + intensieve veehouderij runderen",
-        "waarschuwingsniveau": 1
-      },
-      "2246": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + intensieve veehouderij varkens",
-        "waarschuwingsniveau": 1
-      },
-      "2247": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + KI-station",
-        "waarschuwingsniveau": 1
-      },
-      "2241": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + proefboerderij (zowel akkerbouw als",
-        "waarschuwingsniveau": 1
-      },
-      "2242": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + gemengd bedrijf (zowel akkerbouw als",
-        "waarschuwingsniveau": 1
-      },
-      "2243": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + melkveebedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3333": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "medisch dagverblijf",
-        "waarschuwingsniveau": 2
-      },
-      "3332": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "(poli)kliniek",
-        "waarschuwingsniveau": 2
-      },
-      "3331": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "ziekenhuis",
-        "waarschuwingsniveau": 2
-      },
-      "3330": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "medisch",
-        "waarschuwingsniveau": 1
-      },
-      "3337": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "gezinsvervangend tehuis",
-        "waarschuwingsniveau": 2
-      },
-      "3336": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "verpleegtehuis",
-        "waarschuwingsniveau": 2
-      },
-      "3335": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "revalidatiecentrum",
-        "waarschuwingsniveau": 2
-      },
-      "3334": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "psychiatrisch ziekenhuis",
-        "waarschuwingsniveau": 2
-      },
-      "3339": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "overig medisch",
-        "waarschuwingsniveau": 2
-      },
-      "3338": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "verblijf voor verstandelijk gehandicapten",
-        "waarschuwingsniveau": 2
-      },
-      "3641": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "parkeergarage ge\u00ebxploiteerd voor kortparkeren",
-        "waarschuwingsniveau": 1
-      },
-      "1700": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "garage",
-        "waarschuwingsniveau": 1
-      },
-      "2179": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + bedrijf (overig)",
-        "waarschuwingsniveau": 1
-      },
-      "2215": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + witlofteeltbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3243": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "melkveebedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3242": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gemengd bedrijf (zowel akkerbouw als vee)",
-        "waarschuwingsniveau": 1
-      },
-      "3241": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "proefboerderij (zowel akkerbouw als veeteelt)",
-        "waarschuwingsniveau": 1
-      },
-      "2214": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + champignonteeltbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3247": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "KI-station",
-        "waarschuwingsniveau": 1
-      },
-      "1820": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woonboot",
-        "waarschuwingsniveau": 1
-      },
-      "3245": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "intensieve veehouderij runderen",
-        "waarschuwingsniveau": 1
-      },
-      "3244": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kaasboerderij",
-        "waarschuwingsniveau": 1
-      },
-      "3377": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "begraafplaats",
-        "waarschuwingsniveau": 1
-      },
-      "2144": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + studiogebouw",
-        "waarschuwingsniveau": 1
-      },
-      "2142": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kantoor in bedrijfsverzamelgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "2141": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kantoor",
-        "waarschuwingsniveau": 1
-      },
-      "2140": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kantoor (hoofdcode)",
-        "waarschuwingsniveau": 1
-      },
-      "2149": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kantoor (overig)",
-        "waarschuwingsniveau": 1
-      },
-      "2218": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + tuincentrum",
-        "waarschuwingsniveau": 1
-      },
-      "3246": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "intensieve veehouderij varkens",
-        "waarschuwingsniveau": 1
-      },
-      "3140": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kantoor in bedrijfsverzamelgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3141": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kantoor (hoofdcode)",
-        "waarschuwingsniveau": 1
-      },
-      "3142": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kantoor",
-        "waarschuwingsniveau": 1
-      },
-      "3144": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "studiogebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3149": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig kantoor",
-        "waarschuwingsniveau": 1
-      },
-      "1710": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "collectieve parkeerplaats bij woningen",
-        "waarschuwingsniveau": 1
-      },
-      "3389": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig gemeenschapsgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "2170": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + bedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "2171": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + showroom/ werkplaats/ garage",
-        "waarschuwingsniveau": 1
-      },
-      "2176": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "atelier / werkruimte met woning",
-        "waarschuwingsniveau": 1
-      },
-      "2174": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + productie (fabriek)",
-        "waarschuwingsniveau": 1
-      },
-      "2175": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + opslag/ distributie",
-        "waarschuwingsniveau": 1
-      },
-      "2262": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + viskwekerij",
-        "waarschuwingsniveau": 1
-      },
-      "2261": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + stoeterij / manege / paardenfokkerij",
-        "waarschuwingsniveau": 1
-      },
-      "2266": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + broederij",
-        "waarschuwingsniveau": 1
-      },
-      "2264": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + loonwerkbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "2265": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + pelsdierfokkerij",
-        "waarschuwingsniveau": 1
-      },
-      "3664": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "telefooncentrale",
-        "waarschuwingsniveau": 1
-      },
-      "3661": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "postkantoor / bankgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3660": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "communicatie",
-        "waarschuwingsniveau": 1
-      },
-      "3663": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "postsorteerbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3215": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "witlofteeltbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3669": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig communicatie",
-        "waarschuwingsniveau": 1
-      },
-      "3519": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "tennisbaan",
-        "waarschuwingsniveau": 1
-      },
-      "3644": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "NS-station (gebouwen)",
-        "waarschuwingsniveau": 1
-      },
-      "3668": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "geldautomaat / pinautomaat",
-        "waarschuwingsniveau": 1
-      },
-      "3261": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "stoeterij / manege / paardenfokkerij",
-        "waarschuwingsniveau": 1
-      },
-      "3318": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "dagverblijf",
-        "waarschuwingsniveau": 2
-      },
-      "3263": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "kinderboerderij",
-        "waarschuwingsniveau": 2
-      },
-      "3451": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kerk",
-        "waarschuwingsniveau": 1
-      },
-      "3265": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "pelsdierfokkerij",
-        "waarschuwingsniveau": 1
-      },
-      "4113": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "volkstuin",
-        "waarschuwingsniveau": 1
-      },
-      "3266": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "broederij",
-        "waarschuwingsniveau": 1
-      },
-      "3311": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "cr\u00e8che / peuterspeelzaal",
-        "waarschuwingsniveau": 2
-      },
-      "3310": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "onderwijs",
-        "waarschuwingsniveau": 2
-      },
-      "3313": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "algemeen voortgezet onderwijs (MAVO / HAVO /",
-        "waarschuwingsniveau": 2
-      },
-      "3312": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "basisschool",
-        "waarschuwingsniveau": 2
-      },
-      "3315": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "beroepsonderwijs (LBO / MBO)",
-        "waarschuwingsniveau": 2
-      },
-      "3317": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "speciaal onderwijs",
-        "waarschuwingsniveau": 2
-      },
-      "3316": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "vrijetijdsonderwijs",
-        "waarschuwingsniveau": 2
-      },
-      "3319": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "overig onderwijs",
-        "waarschuwingsniveau": 2
-      },
-      "4114": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "speeltuin",
-        "waarschuwingsniveau": 1
-      },
-      "3513": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "stadion",
-        "waarschuwingsniveau": 1
-      },
-      "3248": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "intensieve veehouderij pluimvee",
-        "waarschuwingsniveau": 1
-      },
-      "2169": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + laboratoria en praktijkruimte (overig)",
-        "waarschuwingsniveau": 1
-      },
-      "3216": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "boomkwekerijbedrijf (inclusief sierteeltbedri",
-        "waarschuwingsniveau": 1
-      },
-      "2161": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + laboratorium",
-        "waarschuwingsniveau": 1
-      },
-      "2160": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + laboratoria / praktijkruimte",
-        "waarschuwingsniveau": 1
-      },
-      "3264": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "loonwerkbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3610": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "dienstverlening openbaar nut",
-        "waarschuwingsniveau": 1
-      },
-      "3612": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "reinwaterkelder",
-        "waarschuwingsniveau": 1
-      },
-      "3613": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "drinkwaterzuiveringsinstallatie",
-        "waarschuwingsniveau": 1
-      },
-      "2459": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + eredienst (overig)",
-        "waarschuwingsniveau": 1
-      },
-      "3617": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gemaal",
-        "waarschuwingsniveau": 1
-      },
-      "3618": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gasdistributiestation",
-        "waarschuwingsniveau": 1
-      },
-      "3619": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "stroomdistributiestation",
-        "waarschuwingsniveau": 1
-      },
-      "2451": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kerk",
-        "waarschuwingsniveau": 1
-      },
-      "2450": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + eredienst",
-        "waarschuwingsniveau": 1
-      },
-      "2453": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + moskee",
-        "waarschuwingsniveau": 1
-      },
-      "2452": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kapel",
-        "waarschuwingsniveau": 1
-      },
-      "4100": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "terrein",
-        "waarschuwingsniveau": 1
-      },
-      "3299": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overige agrarische niet-woningen",
-        "waarschuwingsniveau": 1
-      },
-      "3169": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig laboratorium en praktijkruimte",
-        "waarschuwingsniveau": 1
-      },
-      "3217": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bosbouwbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3162": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "praktijkruimte",
-        "waarschuwingsniveau": 1
-      },
-      "3160": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "laboratorium / praktijkruimte",
-        "waarschuwingsniveau": 1
-      },
-      "3161": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "laboratorium",
-        "waarschuwingsniveau": 1
-      },
-      "3452": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kapel",
-        "waarschuwingsniveau": 1
-      },
-      "3453": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "moskee",
-        "waarschuwingsniveau": 1
-      },
-      "3450": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "eredienst",
-        "waarschuwingsniveau": 1
-      },
-      "3518": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "recreatie / sportcentrum",
-        "waarschuwingsniveau": 1
-      },
-      "3210": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "agrarisch object",
-        "waarschuwingsniveau": 1
-      },
-      "3211": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "akkerbouwbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3212": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "tuinbouwbedrijf (incl bloembollenteelt)",
-        "waarschuwingsniveau": 1
-      },
-      "3213": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "fruitkwekerij",
-        "waarschuwingsniveau": 1
-      },
-      "3690": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "tbv landsverdediging",
-        "waarschuwingsniveau": 1
-      },
-      "3512": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "sportterrein",
-        "waarschuwingsniveau": 1
-      },
-      "3511": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "sporthal / sportzaal / gymnastieklokaal",
-        "waarschuwingsniveau": 1
-      },
-      "3510": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "sport / recreatie",
-        "waarschuwingsniveau": 1
-      },
-      "3517": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kantine",
-        "waarschuwingsniveau": 1
-      },
-      "3361": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bordeel / relaxruimte",
-        "waarschuwingsniveau": 1
-      },
-      "3515": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "clubhuis",
-        "waarschuwingsniveau": 1
-      },
-      "3514": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "tribune",
-        "waarschuwingsniveau": 1
-      },
-      "2119": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + (detail)handel overig",
-        "waarschuwingsniveau": 1
-      },
-      "2110": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + (detail)handel / winkel",
-        "waarschuwingsniveau": 1
-      },
-      "2111": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + winkel",
-        "waarschuwingsniveau": 1
-      },
-      "2112": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + groothandel",
-        "waarschuwingsniveau": 1
-      },
-      "2113": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + toonzaal",
-        "waarschuwingsniveau": 1
-      },
-      "2114": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + kiosk",
-        "waarschuwingsniveau": 1
-      },
-      "3179": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig bedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3525": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "camping",
-        "waarschuwingsniveau": 1
-      },
-      "3522": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "sauna",
-        "waarschuwingsniveau": 1
-      },
-      "3516": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kleedgebouw / toiletten",
-        "waarschuwingsniveau": 1
-      },
-      "3520": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "ijsbaan",
-        "waarschuwingsniveau": 1
-      },
-      "3521": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "zwembad",
-        "waarschuwingsniveau": 1
-      },
-      "3171": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "showroom / werkplaats / garage",
-        "waarschuwingsniveau": 1
-      },
-      "3170": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "3172": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bedrijfsboot",
-        "waarschuwingsniveau": 1
-      },
-      "3175": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "opslag / distributie",
-        "waarschuwingsniveau": 1
-      },
-      "3174": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "productie (fabriek)",
-        "waarschuwingsniveau": 1
-      },
-      "3529": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig sport en recreatie",
-        "waarschuwingsniveau": 1
-      },
-      "2213": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + fruitkwekerij",
-        "waarschuwingsniveau": 1
-      },
-      "2212": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + tuinbouwbedrijf (incl bloembollentee",
-        "waarschuwingsniveau": 1
-      },
-      "2211": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + akkerbouwbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "2210": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + agrarisch object",
-        "waarschuwingsniveau": 1
-      },
-      "2217": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + bosbouwbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "2216": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + boomkwekerijbedrijf (incl sierteelt",
-        "waarschuwingsniveau": 1
-      },
-      "3379": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "crematorium",
-        "waarschuwingsniveau": 1
-      },
-      "3378": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "aula",
-        "waarschuwingsniveau": 1
-      },
-      "1999": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "3376": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "wijk- / buurtcentrum",
-        "waarschuwingsniveau": 1
-      },
-      "3375": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "brandweerkazerne",
-        "waarschuwingsniveau": 1
-      },
-      "3374": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gerechtsgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3373": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "politiebureau",
-        "waarschuwingsniveau": 1
-      },
-      "3372": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gemeentewerken",
-        "waarschuwingsniveau": 1
-      },
-      "3371": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gemeentehuis",
-        "waarschuwingsniveau": 1
-      },
-      "3370": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "gemeenschapsgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "3176": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "atelier / werkruimte",
-        "waarschuwingsniveau": 1
-      },
-      "3638": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "benzinestation",
-        "waarschuwingsniveau": 1
-      },
-      "3639": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig transport",
-        "waarschuwingsniveau": 1
-      },
-      "3636": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "parkeerplaats in parkeergarage",
-        "waarschuwingsniveau": 1
-      },
-      "3637": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "parkeerplaats (niet dienstbaar aan wonen)",
-        "waarschuwingsniveau": 1
-      },
-      "3634": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "NS-station",
-        "waarschuwingsniveau": 1
-      },
-      "3635": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "busstation",
-        "waarschuwingsniveau": 1
-      },
-      "3633": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "vuurtoren",
-        "waarschuwingsniveau": 1
-      },
-      "3630": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "transport",
-        "waarschuwingsniveau": 1
-      },
-      "3532": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kampeerboerderij",
-        "waarschuwingsniveau": 1
-      },
-      "3459": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig eredienst",
-        "waarschuwingsniveau": 1
-      },
-      "1810": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woonwagen / stacaravan",
-        "waarschuwingsniveau": 1
-      },
-      "3214": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "champignonteeltbedrijf",
-        "waarschuwingsniveau": 1
-      },
-      "1750": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "parkeerplaats (dienstbaar aan wonen)",
-        "waarschuwingsniveau": 1
-      },
-      "3629": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig energie en water",
-        "waarschuwingsniveau": 1
-      },
-      "3621": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "trafo",
-        "waarschuwingsniveau": 1
-      },
-      "3620": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "drinkwaterpompstation",
-        "waarschuwingsniveau": 1
-      },
-      "3624": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "windmolen",
-        "waarschuwingsniveau": 1
-      },
-      "3355": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "sociale werkvoorziening",
-        "waarschuwingsniveau": 2
-      },
-      "3354": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "kindertehuis",
-        "waarschuwingsniveau": 2
-      },
-      "3357": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "klooster",
-        "waarschuwingsniveau": 1
-      },
-      "3356": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "gevangenis",
-        "waarschuwingsniveau": 2
-      },
-      "3351": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "verzorgings- / bejaardentehuis (complex)",
-        "waarschuwingsniveau": 2
-      },
-      "3350": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "bijzondere woonfunctie",
-        "waarschuwingsniveau": 1
-      },
-      "3353": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "praktijkruimte (tandarts / fysiotherapeut)",
-        "waarschuwingsniveau": 2
-      },
-      "3352": {
-        "indicator": "Gebruik",
-        "label": "Kwetsbare doelgroep",
-        "aanvullende_informatie": "kruisgebouw",
-        "waarschuwingsniveau": 2
-      },
-      "3359": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overige bijzondere woonfuncties",
-        "waarschuwingsniveau": 1
-      },
-      "3358": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kazerne",
-        "waarschuwingsniveau": 1
-      },
-      "2121": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + cafetaria/snackbar",
-        "waarschuwingsniveau": 1
-      },
-      "2120": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + horeca",
-        "waarschuwingsniveau": 1
-      },
-      "2123": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + bar/dancing",
-        "waarschuwingsniveau": 1
-      },
-      "2122": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + caf\u00e9/bar/restaurant",
-        "waarschuwingsniveau": 1
-      },
-      "2125": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + pension/logiesgebouw",
-        "waarschuwingsniveau": 1
-      },
-      "2124": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + hotel/motel",
-        "waarschuwingsniveau": 1
-      },
-      "3119": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "overig (detail)handel",
-        "waarschuwingsniveau": 1
-      },
-      "1800": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning",
-        "waarschuwingsniveau": 1
-      },
-      "2129": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + horeca (overig)",
-        "waarschuwingsniveau": 1
-      },
-      "3114": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "kiosk",
-        "waarschuwingsniveau": 1
-      },
-      "3113": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "toonzaal",
-        "waarschuwingsniveau": 1
-      },
-      "3112": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "groothandel",
-        "waarschuwingsniveau": 1
-      },
-      "3111": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "winkel",
-        "waarschuwingsniveau": 1
-      },
-      "3110": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "(detail)handel / winkel",
-        "waarschuwingsniveau": 1
-      },
-      "2162": {
-        "indicator": "Gebruik",
-        "label": "Info gebruik",
-        "aanvullende_informatie": "woning + praktijkruimte",
-        "waarschuwingsniveau": 1
-      }
-    },
-    "Verblijfsobject.gebruiksdoel-plus": {
-      "1043": {
-        "indicator": "Gebruik",
-        "label": "Woning met invalide(n)",
-        "aanvullende_informatie": "Invalideeenheid",
-        "waarschuwingsniveau": 2
-      },
-      "1042": {
-        "indicator": "Gebruik",
-        "label": "Woning met bejaarde(n)",
-        "aanvullende_informatie": "Bejaardeneenheid",
-        "waarschuwingsniveau": 2
-      },
-      "1041": {
-        "indicator": "Gebruik",
-        "label": "Woning met student(en)",
-        "aanvullende_informatie": "Studenteneenheid",
-        "waarschuwingsniveau": 1
-      },
-      "1040": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "1054": {
-        "indicator": "Gebruik",
-        "label": "Internaat",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 2
-      },
-      "1020": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "1051": {
-        "indicator": "Gebruik",
-        "label": "Bejaardentehuis",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 2
-      },
-      "1310": {
-        "indicator": "Gebruik",
-        "label": "Verpleegtehuis",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 2
-      },
-      "1050": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "1052": {
-        "indicator": "Gebruik",
-        "label": "Klooster",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 2
-      },
-      "1610": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "1053": {
-        "indicator": "Gebruik",
-        "label": "Kindertehuis",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 2
-      },
-      "1320": {
-        "indicator": "Gebruik",
-        "label": "Inrichting",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 2
-      },
-      "1032": {
-        "indicator": "Gebruik",
-        "label": "Woning met bejaarde(n)",
-        "aanvullende_informatie": "Bejaardeneenheid",
-        "waarschuwingsniveau": 2
-      },
-      "1033": {
-        "indicator": "Gebruik",
-        "label": "Woning met invalide(n)",
-        "aanvullende_informatie": "Invalideeenheid",
-        "waarschuwingsniveau": 2
-      },
-      "1030": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "1031": {
-        "indicator": "Gebruik",
-        "label": "Woning met student(en)",
-        "aanvullende_informatie": "Studenteneenheid",
-        "waarschuwingsniveau": 1
-      },
-      "1010": {
-        "indicator": "Gebruik",
-        "label": "-",
-        "aanvullende_informatie": "",
-        "waarschuwingsniveau": 0
-      },
-      "1011": {
-        "indicator": "Gebruik",
-        "label": "Woning met bejaarde(n)",
-        "aanvullende_informatie": "Bejaarden/aanleunwoning",
-        "waarschuwingsniveau": 2
-      },
-      "1012": {
-        "indicator": "Gebruik",
-        "label": "Woning met invalide(n)",
-        "aanvullende_informatie": "Invalidenwoning",
-        "waarschuwingsniveau": 2
-      }
-    }
-  },
-  "Bouwlagen pand": {
-    "Verblijfsobject.Verdieping toegang": {
-      "0..0": {
-        "waarschuwingsniveau": 4,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "",
-        "label": "-"
-      },
-      "1..3": {
-        "waarschuwingsniveau": 3,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "Toegang op verdieping {waarde}",
-        "label": "Toegang op verdieping"
-      },
-      "..-1": {
-        "waarschuwingsniveau": 2,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "Toegang op verdieping {waarde}",
-        "label": "Toegang op verdieping"
-      },
-      "4..": {
-        "waarschuwingsniveau": 2,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "Toegang op verdieping {waarde}",
-        "label": "Toegang op verdieping"
-      }
-    },
-    "Verblijfsobject.Aantal bouwlagen": {
-      "1..3": {
-        "waarschuwingsniveau": 4,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "",
-        "label": "-"
-      },
-      "7..": {
-        "waarschuwingsniveau": 2,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "Aantal bouwlagen: {waarde}",
-        "label": "Hoog gebouw"
-      },
-      "4..6": {
-        "waarschuwingsniveau": 3,
-        "indicator": "Bouwlagen pand",
-        "aanvullende_informatie": "Aantal bouwlagen: {waarde}",
-        "label": "Hoog gebouw"
-      }
-    }
-  }
+	"Bouwlagen pand": {
+		"Verblijfsobject.Verdieping toegang": {
+			"0..0": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1..3": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "Toegang op verdieping {waarde}",
+				"label": "Toegang op verdieping"
+			},
+			"..-1": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "Toegang op verdieping {waarde}",
+				"label": "Toegang op verdieping"
+			},
+			"4..": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "Toegang op verdieping {waarde}",
+				"label": "Toegang op verdieping"
+			}
+		},
+		"Verblijfsobject.Aantal bouwlagen": {
+			"1..3": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"7..": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "Aantal bouwlagen: {waarde}",
+				"label": "Hoog gebouw"
+			},
+			"4..6": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "Aantal bouwlagen: {waarde}",
+				"label": "Hoog gebouw"
+			}
+		}
+	},
+	"Status pand": {
+		"Pand.Pandstatus": {
+			"27": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Pand in sloopfase [Status]",
+				"label": "Pand in sloopfase"
+			},
+			"26": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Pand in bouwfase [Status]",
+				"label": "Pand in bouwfase"
+			},
+			"31": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"32": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Pand buiten gebruik [Status]",
+				"label": "Pand buiten gebruik"
+			},
+			"24": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Pand in bouwfase [Status]",
+				"label": "Pand in bouwfase"
+			},
+			"28": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Pand gesloopt [Status]",
+				"label": "Pand in sloopfase"
+			},
+			"30": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"29": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Niet gerealiseerd pand [Status]",
+				"label": "Niet gerealiseerd pand"
+			},
+			"25": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Pand in bouwfase [Status]",
+				"label": "Pand in bouwfase"
+			}
+		},
+		"Beperking.beperkingcode": {
+			"KW": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Melding, bevel of beschikkingÂ Wet bodembescherming [Status]",
+				"label": "Beperking pand"
+			},
+			"HV": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"OH": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"WV": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Plicht tot het treffen van voorzieningen [Status]",
+				"label": "Beperking pand"
+			},
+			"WG": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Plicht tot gebruik of beheer door derden [Status]",
+				"label": "Beperking pand"
+			},
+			"VI": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"WE": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"HS": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Splitsing pand zonder vergunning [Status]",
+				"label": "Beperking pand"
+			},
+			"GG": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Monument [Status]",
+				"label": "Beperking pand"
+			},
+			"WI": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Sluiting pand  [Status]",
+				"label": "Beperking pand"
+			},
+			"OS": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Sluiting pand obv Opiumwet [Status]",
+				"label": "Beperking pand"
+			},
+			"WA": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"VV": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"EP": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"GU": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"WS": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"WT": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"GB": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"WU": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Staat van het pand voldoet niet aan Woningwet  [Status]",
+				"label": "Beperking pand"
+			},
+			"GS": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Status pand",
+				"aanvullende_informatie": "Sluiting pand  [Status]",
+				"label": "Beperking pand"
+			}
+		}
+	},
+	"Gebruik": {
+		"Verblijfsobject.gebruikscode": {
+			"2140": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kantoor (hoofdcode)",
+				"label": "Info gebruik"
+			},
+			"3389": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig gemeenschapsgebouw",
+				"label": "Info gebruik"
+			},
+			"3318": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "dagverblijf",
+				"label": "Kwetsbare doelgroep"
+			},
+			"1810": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woonwagen / stacaravan",
+				"label": "Info gebruik"
+			},
+			"3359": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overige bijzondere woonfuncties",
+				"label": "Info gebruik"
+			},
+			"2122": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + cafÃ©/bar/restaurant",
+				"label": "Info gebruik"
+			},
+			"3119": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig (detail)handel",
+				"label": "Info gebruik"
+			},
+			"3175": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "opslag / distributie",
+				"label": "Info gebruik"
+			},
+			"3410": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "cultuur",
+				"label": "Info gebruik"
+			},
+			"2170": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + bedrijf",
+				"label": "Info gebruik"
+			},
+			"3161": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "laboratorium",
+				"label": "Info gebruik"
+			},
+			"3613": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "drinkwaterzuiveringsinstallatie",
+				"label": "Info gebruik"
+			},
+			"3668": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "geldautomaat / pinautomaat",
+				"label": "Info gebruik"
+			},
+			"3334": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "psychiatrisch ziekenhuis",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3375": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "brandweerkazerne",
+				"label": "Info gebruik"
+			},
+			"2214": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + champignonteeltbedrijf",
+				"label": "Info gebruik"
+			},
+			"3352": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kruisgebouw",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3129": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig horeca",
+				"label": "Info gebruik"
+			},
+			"3122": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "cafÃ© / bar / restaurant",
+				"label": "Info gebruik"
+			},
+			"2241": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + proefboerderij (zowel akkerbouw als",
+				"label": "Info gebruik"
+			},
+			"3263": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kinderboerderij",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3336": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "verpleegtehuis",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3312": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "basisschool",
+				"label": "Kwetsbare doelgroep"
+			},
+			"2129": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + horeca (overig)",
+				"label": "Info gebruik"
+			},
+			"2266": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + broederij",
+				"label": "Info gebruik"
+			},
+			"2452": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kapel",
+				"label": "Info gebruik"
+			},
+			"4100": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "terrein",
+				"label": "Info gebruik"
+			},
+			"3661": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "postkantoor / bankgebouw",
+				"label": "Info gebruik"
+			},
+			"3639": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig transport",
+				"label": "Info gebruik"
+			},
+			"2110": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + (detail)handel / winkel",
+				"label": "Info gebruik"
+			},
+			"1999": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"3333": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "medisch dagverblijf",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3513": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "stadion",
+				"label": "Info gebruik"
+			},
+			"3624": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "windmolen",
+				"label": "Info gebruik"
+			},
+			"2160": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + laboratoria / praktijkruimte",
+				"label": "Info gebruik"
+			},
+			"3215": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "witlofteeltbedrijf",
+				"label": "Info gebruik"
+			},
+			"3218": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "tuincentrum",
+				"label": "Info gebruik"
+			},
+			"3516": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kleedgebouw / toiletten",
+				"label": "Info gebruik"
+			},
+			"3144": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "studiogebouw",
+				"label": "Info gebruik"
+			},
+			"2218": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + tuincentrum",
+				"label": "Info gebruik"
+			},
+			"2212": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + tuinbouwbedrijf (incl bloembollentee",
+				"label": "Info gebruik"
+			},
+			"3520": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "ijsbaan",
+				"label": "Info gebruik"
+			},
+			"2169": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + laboratoria en praktijkruimte (overig)",
+				"label": "Info gebruik"
+			},
+			"2217": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + bosbouwbedrijf",
+				"label": "Info gebruik"
+			},
+			"3176": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "atelier / werkruimte",
+				"label": "Info gebruik"
+			},
+			"2179": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + bedrijf (overig)",
+				"label": "Info gebruik"
+			},
+			"3142": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kantoor",
+				"label": "Info gebruik"
+			},
+			"3619": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "stroomdistributiestation",
+				"label": "Info gebruik"
+			},
+			"2176": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "atelier / werkruimte met woning",
+				"label": "Info gebruik"
+			},
+			"3123": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bar / dancing",
+				"label": "Info gebruik"
+			},
+			"3354": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kindertehuis",
+				"label": "Kwetsbare doelgroep"
+			},
+			"2113": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + toonzaal",
+				"label": "Info gebruik"
+			},
+			"4114": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "speeltuin",
+				"label": "Info gebruik"
+			},
+			"2459": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + eredienst (overig)",
+				"label": "Info gebruik"
+			},
+			"3245": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "intensieve veehouderij runderen",
+				"label": "Info gebruik"
+			},
+			"3174": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "productie (fabriek)",
+				"label": "Info gebruik"
+			},
+			"3319": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig onderwijs",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3172": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bedrijfsboot",
+				"label": "Info gebruik"
+			},
+			"3121": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "cafetaria / snackbar",
+				"label": "Info gebruik"
+			},
+			"3663": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "postsorteerbedrijf",
+				"label": "Info gebruik"
+			},
+			"3244": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kaasboerderij",
+				"label": "Info gebruik"
+			},
+			"3311": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "crÃ¨che / peuterspeelzaal",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3618": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gasdistributiestation",
+				"label": "Info gebruik"
+			},
+			"4113": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "volkstuin",
+				"label": "Info gebruik"
+			},
+			"3140": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kantoor in bedrijfsverzamelgebouw",
+				"label": "Info gebruik"
+			},
+			"3379": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "crematorium",
+				"label": "Info gebruik"
+			},
+			"3529": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig sport en recreatie",
+				"label": "Info gebruik"
+			},
+			"3633": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "vuurtoren",
+				"label": "Info gebruik"
+			},
+			"3373": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "politiebureau",
+				"label": "Info gebruik"
+			},
+			"2144": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + studiogebouw",
+				"label": "Info gebruik"
+			},
+			"2451": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kerk",
+				"label": "Info gebruik"
+			},
+			"3332": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "(poli)kliniek",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3114": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kiosk",
+				"label": "Info gebruik"
+			},
+			"2299": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + agrarische niet-woning (overig)",
+				"label": "Info gebruik"
+			},
+			"3361": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bordeel / relaxruimte",
+				"label": "Info gebruik"
+			},
+			"2246": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + intensieve veehouderij varkens",
+				"label": "Info gebruik"
+			},
+			"3350": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bijzondere woonfunctie",
+				"label": "Info gebruik"
+			},
+			"1820": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woonboot",
+				"label": "Info gebruik"
+			},
+			"3660": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "communicatie",
+				"label": "Info gebruik"
+			},
+			"2141": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kantoor",
+				"label": "Info gebruik"
+			},
+			"3111": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "winkel",
+				"label": "Info gebruik"
+			},
+			"3211": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "akkerbouwbedrijf",
+				"label": "Info gebruik"
+			},
+			"3416": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bibliotheek",
+				"label": "Info gebruik"
+			},
+			"3525": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "camping",
+				"label": "Info gebruik"
+			},
+			"3113": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "toonzaal",
+				"label": "Info gebruik"
+			},
+			"3519": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "tennisbaan",
+				"label": "Info gebruik"
+			},
+			"3149": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig kantoor",
+				"label": "Info gebruik"
+			},
+			"3171": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "showroom / werkplaats / garage",
+				"label": "Info gebruik"
+			},
+			"2243": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + melkveebedrijf",
+				"label": "Info gebruik"
+			},
+			"2213": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + fruitkwekerij",
+				"label": "Info gebruik"
+			},
+			"3617": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gemaal",
+				"label": "Info gebruik"
+			},
+			"2174": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + productie (fabriek)",
+				"label": "Info gebruik"
+			},
+			"3261": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "stoeterij / manege / paardenfokkerij",
+				"label": "Info gebruik"
+			},
+			"3241": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "proefboerderij (zowel akkerbouw als veeteelt)",
+				"label": "Info gebruik"
+			},
+			"3621": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "trafo",
+				"label": "Info gebruik"
+			},
+			"3210": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "agrarisch object",
+				"label": "Info gebruik"
+			},
+			"2265": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + pelsdierfokkerij",
+				"label": "Info gebruik"
+			},
+			"3248": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "intensieve veehouderij pluimvee",
+				"label": "Info gebruik"
+			},
+			"2161": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + laboratorium",
+				"label": "Info gebruik"
+			},
+			"3532": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kampeerboerderij",
+				"label": "Info gebruik"
+			},
+			"3630": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "transport",
+				"label": "Info gebruik"
+			},
+			"2123": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + bar/dancing",
+				"label": "Info gebruik"
+			},
+			"3243": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "melkveebedrijf",
+				"label": "Info gebruik"
+			},
+			"3635": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "busstation",
+				"label": "Info gebruik"
+			},
+			"3358": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kazerne",
+				"label": "Info gebruik"
+			},
+			"3356": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gevangenis",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3217": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bosbouwbedrijf",
+				"label": "Info gebruik"
+			},
+			"3515": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "clubhuis",
+				"label": "Info gebruik"
+			},
+			"3610": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "dienstverlening openbaar nut",
+				"label": "Info gebruik"
+			},
+			"3634": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "NS-station",
+				"label": "Info gebruik"
+			},
+			"2215": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + witlofteeltbedrijf",
+				"label": "Info gebruik"
+			},
+			"3411": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "schouwburg / concertgebouw",
+				"label": "Info gebruik"
+			},
+			"3612": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "reinwaterkelder",
+				"label": "Info gebruik"
+			},
+			"3641": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "parkeergarage geÃ«xploiteerd voor kortparkeren",
+				"label": "Info gebruik"
+			},
+			"3629": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig energie en water",
+				"label": "Info gebruik"
+			},
+			"2111": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + winkel",
+				"label": "Info gebruik"
+			},
+			"2242": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + gemengd bedrijf (zowel akkerbouw als",
+				"label": "Info gebruik"
+			},
+			"3216": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "boomkwekerijbedrijf (inclusief sierteeltbedri",
+				"label": "Info gebruik"
+			},
+			"2142": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kantoor in bedrijfsverzamelgebouw",
+				"label": "Info gebruik"
+			},
+			"2245": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + intensieve veehouderij runderen",
+				"label": "Info gebruik"
+			},
+			"2124": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + hotel/motel",
+				"label": "Info gebruik"
+			},
+			"2450": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + eredienst",
+				"label": "Info gebruik"
+			},
+			"3514": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "tribune",
+				"label": "Info gebruik"
+			},
+			"2247": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + KI-station",
+				"label": "Info gebruik"
+			},
+			"3355": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "sociale werkvoorziening",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3160": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "laboratorium / praktijkruimte",
+				"label": "Info gebruik"
+			},
+			"3330": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "medisch",
+				"label": "Info gebruik"
+			},
+			"2248": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + intensieve veehouderij pluimvee",
+				"label": "Info gebruik"
+			},
+			"3459": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig eredienst",
+				"label": "Info gebruik"
+			},
+			"3376": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "wijk- / buurtcentrum",
+				"label": "Info gebruik"
+			},
+			"3212": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "tuinbouwbedrijf (incl bloembollenteelt)",
+				"label": "Info gebruik"
+			},
+			"2112": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + groothandel",
+				"label": "Info gebruik"
+			},
+			"3213": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "fruitkwekerij",
+				"label": "Info gebruik"
+			},
+			"3317": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "speciaal onderwijs",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3214": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "champignonteeltbedrijf",
+				"label": "Info gebruik"
+			},
+			"3511": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "sporthal / sportzaal / gymnastieklokaal",
+				"label": "Info gebruik"
+			},
+			"3299": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overige agrarische niet-woningen",
+				"label": "Info gebruik"
+			},
+			"3377": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "begraafplaats",
+				"label": "Info gebruik"
+			},
+			"3378": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "aula",
+				"label": "Info gebruik"
+			},
+			"2453": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + moskee",
+				"label": "Info gebruik"
+			},
+			"3370": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gemeenschapsgebouw",
+				"label": "Info gebruik"
+			},
+			"3419": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig cultureel",
+				"label": "Info gebruik"
+			},
+			"3242": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gemengd bedrijf (zowel akkerbouw als vee)",
+				"label": "Info gebruik"
+			},
+			"3412": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "congresgebouw",
+				"label": "Info gebruik"
+			},
+			"3169": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig laboratorium en praktijkruimte",
+				"label": "Info gebruik"
+			},
+			"2125": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + pension/logiesgebouw",
+				"label": "Info gebruik"
+			},
+			"3124": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "hotel / motel",
+				"label": "Info gebruik"
+			},
+			"3120": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "horeca",
+				"label": "Info gebruik"
+			},
+			"3266": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "broederij",
+				"label": "Info gebruik"
+			},
+			"3664": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "telefooncentrale",
+				"label": "Info gebruik"
+			},
+			"3110": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "(detail)handel / winkel",
+				"label": "Info gebruik"
+			},
+			"1700": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "garage",
+				"label": "Info gebruik"
+			},
+			"3315": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "beroepsonderwijs (LBO / MBO)",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3313": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "algemeen voortgezet onderwijs (MAVO / HAVO /",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3264": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "loonwerkbedrijf",
+				"label": "Info gebruik"
+			},
+			"3372": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gemeentewerken",
+				"label": "Info gebruik"
+			},
+			"3522": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "sauna",
+				"label": "Info gebruik"
+			},
+			"3414": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "expositiehal / evenementenhal",
+				"label": "Info gebruik"
+			},
+			"2121": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + cafetaria/snackbar",
+				"label": "Info gebruik"
+			},
+			"3112": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "groothandel",
+				"label": "Info gebruik"
+			},
+			"2119": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + (detail)handel overig",
+				"label": "Info gebruik"
+			},
+			"1800": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning",
+				"label": "Info gebruik"
+			},
+			"2261": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + stoeterij / manege / paardenfokkerij",
+				"label": "Info gebruik"
+			},
+			"3339": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig medisch",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3614": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "watertoren",
+				"label": "Info gebruik"
+			},
+			"3637": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "parkeerplaats (niet dienstbaar aan wonen)",
+				"label": "Info gebruik"
+			},
+			"3353": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "praktijkruimte (tandarts / fysiotherapeut)",
+				"label": "Kwetsbare doelgroep"
+			},
+			"2211": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + akkerbouwbedrijf",
+				"label": "Info gebruik"
+			},
+			"3351": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "verzorgings- / bejaardentehuis (complex)",
+				"label": "Kwetsbare doelgroep"
+			},
+			"2120": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + horeca",
+				"label": "Info gebruik"
+			},
+			"2244": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kaasboerderij",
+				"label": "Info gebruik"
+			},
+			"3246": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "intensieve veehouderij varkens",
+				"label": "Info gebruik"
+			},
+			"3357": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "klooster",
+				"label": "Info gebruik"
+			},
+			"1750": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "parkeerplaats (dienstbaar aan wonen)",
+				"label": "Info gebruik"
+			},
+			"2210": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + agrarisch object",
+				"label": "Info gebruik"
+			},
+			"3417": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kasteel / paleis",
+				"label": "Info gebruik"
+			},
+			"3512": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "sportterrein",
+				"label": "Info gebruik"
+			},
+			"3310": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "onderwijs",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3644": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "NS-station (gebouwen)",
+				"label": "Info gebruik"
+			},
+			"2149": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kantoor (overig)",
+				"label": "Info gebruik"
+			},
+			"3338": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "verblijf voor verstandelijk gehandicapten",
+				"label": "Kwetsbare doelgroep"
+			},
+			"2264": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + loonwerkbedrijf",
+				"label": "Info gebruik"
+			},
+			"3510": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "sport / recreatie",
+				"label": "Info gebruik"
+			},
+			"3247": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "KI-station",
+				"label": "Info gebruik"
+			},
+			"3162": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "praktijkruimte",
+				"label": "Info gebruik"
+			},
+			"1710": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "collectieve parkeerplaats bij woningen",
+				"label": "Info gebruik"
+			},
+			"3262": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "viskwekerij",
+				"label": "Info gebruik"
+			},
+			"3179": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig bedrijf",
+				"label": "Info gebruik"
+			},
+			"2216": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + boomkwekerijbedrijf (incl sierteelt",
+				"label": "Info gebruik"
+			},
+			"3517": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kantine",
+				"label": "Info gebruik"
+			},
+			"3170": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bedrijf",
+				"label": "Info gebruik"
+			},
+			"3690": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "tbv landsverdediging",
+				"label": "Info gebruik"
+			},
+			"3371": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gemeentehuis",
+				"label": "Info gebruik"
+			},
+			"2114": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + kiosk",
+				"label": "Info gebruik"
+			},
+			"3620": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "drinkwaterpompstation",
+				"label": "Info gebruik"
+			},
+			"2162": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + praktijkruimte",
+				"label": "Info gebruik"
+			},
+			"3450": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "eredienst",
+				"label": "Info gebruik"
+			},
+			"3331": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "ziekenhuis",
+				"label": "Kwetsbare doelgroep"
+			},
+			"2262": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + viskwekerij",
+				"label": "Info gebruik"
+			},
+			"3374": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gerechtsgebouw",
+				"label": "Info gebruik"
+			},
+			"3638": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "benzinestation",
+				"label": "Info gebruik"
+			},
+			"3316": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "vrijetijdsonderwijs",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3265": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "pelsdierfokkerij",
+				"label": "Info gebruik"
+			},
+			"2525": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + camping",
+				"label": "Info gebruik"
+			},
+			"3521": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "zwembad",
+				"label": "Info gebruik"
+			},
+			"3337": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "gezinsvervangend tehuis",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3518": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "recreatie / sportcentrum",
+				"label": "Info gebruik"
+			},
+			"3413": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "museum",
+				"label": "Info gebruik"
+			},
+			"3452": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kapel",
+				"label": "Info gebruik"
+			},
+			"3451": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kerk",
+				"label": "Info gebruik"
+			},
+			"3669": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "overig communicatie",
+				"label": "Info gebruik"
+			},
+			"2171": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + showroom/ werkplaats/ garage",
+				"label": "Info gebruik"
+			},
+			"3636": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "parkeerplaats in parkeergarage",
+				"label": "Info gebruik"
+			},
+			"3415": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "bioscoop",
+				"label": "Info gebruik"
+			},
+			"3141": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "kantoor (hoofdcode)",
+				"label": "Info gebruik"
+			},
+			"3335": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "revalidatiecentrum",
+				"label": "Kwetsbare doelgroep"
+			},
+			"3453": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "moskee",
+				"label": "Info gebruik"
+			},
+			"3125": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "pension / logiesgebouw",
+				"label": "Info gebruik"
+			},
+			"2175": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "woning + opslag/ distributie",
+				"label": "Info gebruik"
+			}
+		},
+		"Verblijfsobject.gebruiksdoel-plus": {
+			"1052": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "Klooster"
+			},
+			"1051": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "Bejaardentehuis"
+			},
+			"1030": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1032": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Bejaardeneenheid",
+				"label": "Woning met bejaarde(n)"
+			},
+			"1053": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "Kindertehuis"
+			},
+			"1320": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "Inrichting"
+			},
+			"1040": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1011": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Bejaarden/aanleunwoning",
+				"label": "Woning met bejaarde(n)"
+			},
+			"1031": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Studenteneenheid",
+				"label": "Woning met student(en)"
+			},
+			"1050": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1012": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Invalidenwoning",
+				"label": "Woning met invalide(n)"
+			},
+			"1020": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1041": {
+				"waarschuwingsniveau": 3,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Studenteneenheid",
+				"label": "Woning met student(en)"
+			},
+			"1310": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "Verpleegtehuis"
+			},
+			"1054": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "Internaat"
+			},
+			"1042": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Bejaardeneenheid",
+				"label": "Woning met bejaarde(n)"
+			},
+			"1010": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1610": {
+				"waarschuwingsniveau": 4,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "",
+				"label": "-"
+			},
+			"1043": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Invalideeenheid",
+				"label": "Woning met invalide(n)"
+			},
+			"1033": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Gebruik",
+				"aanvullende_informatie": "Invalideeenheid",
+				"label": "Woning met invalide(n)"
+			}
+		}
+	}
 }

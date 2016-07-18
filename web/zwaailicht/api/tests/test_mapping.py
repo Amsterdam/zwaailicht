@@ -4,11 +4,44 @@ from django.test import override_settings
 from .. import mapping
 
 
+class RangeParserTest(TestCase):
+
+    def test_table(self):
+        table = {
+            '..-3': 'really negative',
+            '-2..-1': 'somewhat negative',
+            '0..0': 'zeroish',
+            '1..4': 'positively',
+            '5..': 'uberpositively'
+        }
+
+        cases = (
+            (-10, 'really negative'),
+            (-3, 'really negative'),
+            (-2, 'somewhat negative'),
+            (-1, 'somewhat negative'),
+            (0, 'zeroish'),
+            (1, 'positively'),
+            (2, 'positively'),
+            (3, 'positively'),
+            (4, 'positively'),
+            (5, 'uberpositively'),
+            (6, 'uberpositively'),
+            (50, 'uberpositively'),
+            (1000, 'uberpositively'),
+        )
+
+        for test_case in cases:
+            value = test_case[0]
+            expected = test_case[1]
+            result = mapping.get_from_table_by_range(table, value)
+            self.assertEqual(expected, result, "Wrong result for {}".format(value))
+
+
 @override_settings(
     MAPPING_FILE='api/tests/fixture_files/mapping.json'
 )
 class MappingTest(TestCase):
-
     def setUp(self):
         self.mapping = mapping.Mapping()
 
@@ -67,5 +100,40 @@ class MappingTest(TestCase):
             "waarschuwingsniveau": 2
         }, indicator)
 
+    def test_verdieping_toegang_1(self):
+        indicator = self.mapping.map_verdieping_toegang(1)
+        self.assertIsNotNone(indicator)
+        self.assertDictEqual({
+            "waarschuwingsniveau": 3,
+            "indicator": "Bouwlagen pand",
+            "aanvullende_informatie": "Toegang op verdieping 1",
+            "label": "Toegang op verdieping"
+        }, indicator)
 
+    def test_verdieping_toegang_12(self):
+        indicator = self.mapping.map_verdieping_toegang(12)
+        self.assertIsNotNone(indicator)
+        self.assertDictEqual({
+            "waarschuwingsniveau": 2,
+            "indicator": "Bouwlagen pand",
+            "aanvullende_informatie": "Toegang op verdieping 12",
+            "label": "Toegang op verdieping"
+        }, indicator)
+
+    def test_verdieping_toegang_0(self):
+        indicator = self.mapping.map_verdieping_toegang(0)
+        self.assertIsNone(indicator)
+
+    def test_aantal_bouwlagen_1(self):
+        indicator = self.mapping.map_aantal_bouwlagen(1)
+        self.assertIsNone(indicator)
+
+    def test_aantal_bouwlagen_100(self):
+        indicator = self.mapping.map_aantal_bouwlagen(100)
+        self.assertDictEqual({
+            "waarschuwingsniveau": 2,
+            "indicator": "Bouwlagen pand",
+            "aanvullende_informatie": "Aantal bouwlagen: 100",
+            "label": "Hoog gebouw"
+        }, indicator)
 

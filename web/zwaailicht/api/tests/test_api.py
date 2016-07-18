@@ -31,7 +31,7 @@ class PandStatusTest(APITestCase):
         self.assertTrue(len(indicatoren) >= 1)
 
         self.assertEqual('Status pand', indicatoren[0]['indicator'])
-        self.assertEqual(1, indicatoren[0]['waarschuwingsniveau'])
+        self.assertEqual(3, indicatoren[0]['waarschuwingsniveau'])
         self.assertEqual('Beperking pand', indicatoren[0]['label'])
         self.assertEqual('Splitsing pand zonder vergunning [Status]', indicatoren[0]['aanvullende_informatie'])
 
@@ -72,7 +72,7 @@ class GebruikTest(APITestCase):
         self.assertTrue(len(indicatoren) >= 1)
 
         self.assertEqual('Gebruik', indicatoren[0]['indicator'])
-        self.assertEqual(1, indicatoren[0]['waarschuwingsniveau'])
+        self.assertEqual(3, indicatoren[0]['waarschuwingsniveau'])
         self.assertEqual('Info gebruik', indicatoren[0]['label'])
         self.assertEqual('cultuur', indicatoren[0]['aanvullende_informatie'])
 
