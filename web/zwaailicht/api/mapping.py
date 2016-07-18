@@ -1,6 +1,8 @@
 import csv
 import json
 
+from django.conf import settings
+
 
 class Mapping(object):
     """
@@ -8,7 +10,7 @@ class Mapping(object):
     """
 
     def __init__(self):
-        with open('mapping.json') as f:
+        with open(settings.MAPPING_FILE) as f:
             self.mapping = json.load(f)
 
     def _get_indicator(self, indicator, field, value):

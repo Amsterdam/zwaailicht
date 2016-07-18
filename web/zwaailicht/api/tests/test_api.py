@@ -5,7 +5,10 @@ from api.tests.fixtures import patch_requests
 
 
 @patch_requests
-@override_settings(VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/")
+@override_settings(
+    VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/",
+    MAPPING_FILE='api/tests/fixture_files/mapping.json'
+)
 class PandStatusTest(APITestCase):
     def test_simple_response(self):
         """
@@ -42,7 +45,10 @@ class PandStatusTest(APITestCase):
 
 
 @patch_requests
-@override_settings(VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/")
+@override_settings(
+    VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/",
+    MAPPING_FILE='api/tests/fixture_files/mapping.json'
+)
 class GebruikTest(APITestCase):
     def test_simple_response(self):
         """

@@ -1,8 +1,12 @@
 from django.test import TestCase
+from django.test import override_settings
 
 from .. import mapping
 
 
+@override_settings(
+    MAPPING_FILE='api/tests/fixture_files/mapping.json'
+)
 class MappingTest(TestCase):
 
     def setUp(self):
