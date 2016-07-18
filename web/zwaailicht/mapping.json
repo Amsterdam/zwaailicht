@@ -1,42 +1,48 @@
 {
 	"Bouwlagen pand": {
 		"Verblijfsobject.Verdieping toegang": {
-			"0": {
+			"0..0": {
 				"waarschuwingsniveau": 4,
 				"indicator": "Bouwlagen pand",
 				"aanvullende_informatie": "",
 				"label": "-"
 			},
-			"> 0 && <= 3": {
+			"1..3": {
 				"waarschuwingsniveau": 3,
 				"indicator": "Bouwlagen pand",
-				"aanvullende_informatie": "Toegang op verdieping <waarde>",
+				"aanvullende_informatie": "Toegang op verdieping {waarde}",
 				"label": "Toegang op verdieping"
 			},
-			"< 0 || > 3": {
+			"..-1": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Bouwlagen pand",
-				"aanvullende_informatie": "Toegang op verdieping <waarde>",
+				"aanvullende_informatie": "Toegang op verdieping {waarde}",
+				"label": "Toegang op verdieping"
+			},
+			"4..": {
+				"waarschuwingsniveau": 2,
+				"indicator": "Bouwlagen pand",
+				"aanvullende_informatie": "Toegang op verdieping {waarde}",
 				"label": "Toegang op verdieping"
 			}
 		},
 		"Verblijfsobject.Aantal bouwlagen": {
-			"> 0 && <= 3": {
+			"1..3": {
 				"waarschuwingsniveau": 4,
 				"indicator": "Bouwlagen pand",
 				"aanvullende_informatie": "",
 				"label": "-"
 			},
-			">= 7": {
+			"7..": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Bouwlagen pand",
-				"aanvullende_informatie": "Aantal bouwlagen: <waarde>",
+				"aanvullende_informatie": "Aantal bouwlagen: {waarde}",
 				"label": "Hoog gebouw"
 			},
-			">= 4 && <= 6": {
+			"4..6": {
 				"waarschuwingsniveau": 3,
 				"indicator": "Bouwlagen pand",
-				"aanvullende_informatie": "Aantal bouwlagen: <waarde>",
+				"aanvullende_informatie": "Aantal bouwlagen: {waarde}",
 				"label": "Hoog gebouw"
 			}
 		}
