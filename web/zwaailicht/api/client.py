@@ -30,6 +30,7 @@ class Verblijfsobject(object):
         self.beperkingen = _json(json, 'beperkingen', 'href')
         self.gebruiksdoel = _json(json, 'gebruiksdoel', 'code')
         self.gebruikscode = _json(json, 'gebruik', 'code')
+        self.aantal_bouwlagen = _json(json, 'bouwlagen')
 
     def __str__(self):
         return "VBO({})".format(self.landelijk_id)

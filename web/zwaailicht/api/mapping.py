@@ -6,6 +6,9 @@ _LARGE = 1000000
 
 
 def get_from_table_by_range(table, request):
+    if request is None:
+        return None
+
     for k, v in table.items():
         lower, upper = k.split('..')
         lower = int(lower) if lower else -_LARGE

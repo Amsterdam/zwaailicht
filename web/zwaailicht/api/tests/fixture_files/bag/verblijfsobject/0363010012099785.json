@@ -1,0 +1,160 @@
+{
+    "_buurtcombinatie": {
+        "_display": "Middenmeer (56)",
+        "_links": {
+            "self": {
+                "href": "http://api/gebieden/buurtcombinatie/3630012052004/"
+            }
+        },
+        "dataset": "gebieden",
+        "naam": "Middenmeer"
+    },
+    "_display": "Science Park 616",
+    "_gemeente": {
+        "_display": "Amsterdam",
+        "_links": {
+            "self": {
+                "href": "http://api/brk/gemeente/03630000000000/"
+            }
+        },
+        "code": "0363",
+        "dataset": "bag"
+    },
+    "_links": {
+        "self": {
+            "href": "http://api/bag/verblijfsobject/03630023839979/"
+        }
+    },
+    "_stadsdeel": {
+        "_display": "Oost",
+        "_links": {
+            "self": {
+                "href": "http://api/gebieden/stadsdeel/03630011872039/"
+            }
+        },
+        "code": "M",
+        "dataset": "gebieden",
+        "naam": "Oost"
+    },
+    "_woonplaats": {
+        "_display": "Amsterdam",
+        "_links": {
+            "self": {
+                "href": "http://api/bag/woonplaats/03630022796658/"
+            }
+        },
+        "dataset": "bag",
+        "landelijk_id": "3594"
+    },
+    "aantal_kamers": null,
+    "adressen": {
+        "count": 1,
+        "href": "http://api/bag/nummeraanduiding/?verblijfsobject=03630023839979"
+    },
+    "begin_geldigheid": "2015-08-25",
+    "beperkingen": {
+        "count": 0,
+        "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630023839979"
+    },
+    "bouwblok": {
+        "_display": "MK27",
+        "_links": {
+            "self": {
+                "href": "http://api/gebieden/bouwblok/03630023380527/"
+            }
+        },
+        "dataset": "gebieden",
+        "id": "03630023380527"
+    },
+    "bouwlaag_toegang": 0,
+    "bouwlagen": 13,
+    "bron": null,
+    "buurt": {
+        "_display": "Science Park Zuid (M56i)",
+        "_links": {
+            "self": {
+                "href": "http://api/gebieden/buurt/03630000000773/"
+            }
+        },
+        "code": "56i",
+        "dataset": "gebieden",
+        "naam": "Science Park Zuid"
+    },
+    "dataset": "bag",
+    "date_modified": "2016-07-18T22:31:59.815463Z",
+    "document_mutatie": "2015-08-25",
+    "document_nummer": "MB01766613",
+    "eigendomsverhouding": null,
+    "einde_geldigheid": null,
+    "financieringswijze": null,
+    "gebruik": {
+        "code": "3179",
+        "omschrijving": "overig bedrijf"
+    },
+    "gebruiksdoel": {
+        "code": "1400",
+        "omschrijving": "BEST-industriefunctie"
+    },
+    "geometrie": {
+        "coordinates": [
+            125969.0,
+            485238.0
+        ],
+        "type": "Point"
+    },
+    "hoofdadres": {
+        "_display": "Science Park 616",
+        "_links": {
+            "self": {
+                "href": "http://api/bag/nummeraanduiding/03630023839894/"
+            }
+        },
+        "dataset": "bag",
+        "hoofdadres": true,
+        "landelijk_id": "0363200012101318"
+    },
+    "kadastrale_objecten": {
+        "count": 0,
+        "href": "http://api/brk/object/?verblijfsobjecten__id=03630023839979"
+    },
+    "ligging": {
+        "code": "99",
+        "omschrijving": "Anders"
+    },
+    "locatie_ingang": null,
+    "mutatie_gebruiker": "DBI",
+    "oppervlakte": 22936,
+    "panden": {
+        "count": 1,
+        "href": "http://api/bag/pand/?verblijfsobjecten__id=03630023839979"
+    },
+    "rechten": {
+        "count": 0,
+        "href": "http://api/brk/zakelijk-recht/?verblijfsobjecten__id=03630023839979"
+    },
+    "reden_afvoer": null,
+    "reden_opvoer": {
+        "code": "28",
+        "omschrijving": "Nieuwbouw vergunningsfase"
+    },
+    "sleutelverzendend": "03630023839979",
+    "status": {
+        "code": "18",
+        "omschrijving": "Verblijfsobject gevormd"
+    },
+    "status_coordinaat": {
+        "code": "TMP",
+        "omschrijving": "Tijdelijk punt"
+    },
+    "toegang": {
+        "code": "08",
+        "omschrijving": "Begane grond (08)"
+    },
+    "type_woonobject": {
+        "code": "",
+        "omschrijving": ""
+    },
+    "verblijfsobjectidentificatie": "0363010012099785",
+    "verhuurbare_eenheden": null,
+    "woningvoorraad": false
+}

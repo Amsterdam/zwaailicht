@@ -148,11 +148,26 @@ class BouwlagenViewSet(viewsets.ViewSet):
     Bouwlagen geeft informatie over het aantal bouwlagen van een verblijfsobject.
     """
 
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.mapping = mapping.Mapping()
+        self.client = client.Client()
+
     def list(self, request):
         return Response("Gebruik de url /bouwlagen/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
         indicatoren = []
+
+        vbo = self.client.get_vbo(pk)
+        if not vbo:
+            raise Http404()
+
+        aantal_bouwlagen = vbo.aantal_bouwlagen
+        mapped = self.mapping.map_aantal_bouwlagen(aantal_bouwlagen)
+        if mapped:
+            indicatoren.append(mapped)
+
         return Response(data={
             'locatie': {
                 'bag_id': pk,

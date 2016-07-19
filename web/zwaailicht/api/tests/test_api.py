@@ -110,3 +110,16 @@ class BouwlagenTest(APITestCase):
 
         indicatoren = response.data['indicatoren']
         self.assertListEqual([], indicatoren)
+
+    def test_response_meerdere_verdiepingen(self):
+        response = self.client.get('/zwaailicht/bouwlagen/0363010012099785/')
+        self.assertIn('indicatoren', response.data)
+
+        indicatoren = response.data['indicatoren']
+        self.assertNotEqual([], indicatoren)
+
+        self.assertEqual('Bouwlagen pand', indicatoren[0]['indicator'])
+        self.assertEqual(2, indicatoren[0]['waarschuwingsniveau'])
+        self.assertEqual('Hoog gebouw', indicatoren[0]['label'])
+        self.assertEqual('Aantal bouwlagen: 13', indicatoren[0]['aanvullende_informatie'])
+
