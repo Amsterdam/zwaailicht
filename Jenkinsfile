@@ -4,12 +4,12 @@ String BRANCH = "${env.BRANCH_NAME}"
 String INVENTORY = (BRANCH == "master" ? "production" : "acceptance")
 
 
-static def tryStep(String message, Closure block, Closure tearDown = null) {
+def tryStep(String message, Closure block, Closure tearDown = null) {
     try {
         block();
     }
     catch (Throwable t) {
-        slackSend message: "${JOB_NAME}: ${message} failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
+        slackSend message: "${env.JOB_NAME}: ${message} failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
 
         warning(message)
         throw t;
