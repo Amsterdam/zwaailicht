@@ -57,13 +57,8 @@ node {
         }
 }
 
-node {
 
-    stage "Wait for approval"
-
-       input "Deploy to Production?"
-
-}
+input "Deploy to Production?"
 
 
 node {
