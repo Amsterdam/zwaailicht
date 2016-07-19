@@ -142,6 +142,6 @@ class BouwlagenTest(APITestCase):
         self.assertDictEqual({
             "waarschuwingsniveau": 3,
             "indicator": "Bouwlagen pand",
-            "aanvullende_informatie": "Toegang op verdieping 1",
+            "aanvullende_informatie": "Toegang op verdieping 1111",
             "label": "Toegang op verdieping"
         }, indicatoren[1])
