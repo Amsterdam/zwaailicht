@@ -54,14 +54,23 @@ node {
                             [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
                     ]
         }
+}
+
+node {
 
     stage "Wait for approval"
 
-        input "Deploy to Production?"
+       input "Deploy to Production?"
 
+}
+
+
+node {
     stage "Deploy to PROD"
 
         tryStep "image tagging", {
+            def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:develop")
+            image.pull()
             image.push("master")
             image.push("latest")
         }
