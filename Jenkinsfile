@@ -3,6 +3,10 @@
 String BRANCH = "${env.BRANCH_NAME}"
 String INVENTORY = (BRANCH == "master" ? "production" : "acceptance")
 
+def warning(msg) {
+    slackSend message: "$msg ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
+}
+
 node {
 
     stage "Checkout"
@@ -13,6 +17,8 @@ node {
             sh "docker-compose build"
         }
         catch (err) {
+            warning 'Zwaailicht service: build failure'
+
             slackSend message: "Zwaailicht service: build failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
             throw err
         }
