@@ -13,7 +13,7 @@ node {
             sh "docker-compose build"
         }
         catch (err) {
-            slackSend message: "Zwaailicht service: build failure", channel: '#ci-channel'
+            slackSend message: "Zwaailicht service: build failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'red'
             throw err
         }
 
