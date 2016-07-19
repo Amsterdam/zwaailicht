@@ -23,5 +23,5 @@ router = ZwaailichtRouter()
 router.register('mapping', views.MappingViewSet, base_name='mapping')
 router.register('status_pand', views.PandStatusViewSet, base_name='status_pand')
 router.register('gebruik', views.GebruikViewSet, base_name='gebruik')
-
+router.register('bouwlagen', views.BouwlagenViewSet, base_name='bouwlagen')
 

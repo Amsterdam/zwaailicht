@@ -87,7 +87,7 @@
         "dataset": "gebieden"
     },
     "panden": {
-        "href": "http://api/bag/pand/?verblijfsobjecten__id=03630000758545",
+        "href": "http://api/bag/pand/?verblijfsobjecten__id=0363010000758545",
         "count": 1
     },
     "kadastrale_objecten": {
@@ -99,7 +99,7 @@
         "count": 1
     },
     "beperkingen": {
-        "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630000758545",
+        "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=0363010000758545",
         "count": 1
     },
     "bouwblok": {

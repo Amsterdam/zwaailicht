@@ -1,0 +1,160 @@
+{
+    "_buurtcombinatie": {
+        "_display": "Jordaan (06)",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052037/"
+            }
+        },
+        "dataset": "gebieden",
+        "naam": "Jordaan"
+    },
+    "_display": "Prinsengracht 128B",
+    "_gemeente": {
+        "_display": "Amsterdam",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+            }
+        },
+        "code": "0363",
+        "dataset": "bag"
+    },
+    "_links": {
+        "self": {
+            "href": "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/03630000783909/"
+        }
+    },
+    "_stadsdeel": {
+        "_display": "Centrum",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000018/"
+            }
+        },
+        "code": "A",
+        "dataset": "gebieden",
+        "naam": "Centrum"
+    },
+    "_woonplaats": {
+        "_display": "Amsterdam",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+            }
+        },
+        "dataset": "bag",
+        "landelijk_id": "3594"
+    },
+    "aantal_kamers": 3,
+    "adressen": {
+        "count": 1,
+        "href": "https://api-acc.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000783909"
+    },
+    "begin_geldigheid": "2012-08-09",
+    "beperkingen": {
+        "count": 2,
+        "href": "https://api-acc.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000783909"
+    },
+    "bouwblok": {
+        "_display": "YJ47",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/bouwblok/03630012100671/"
+            }
+        },
+        "dataset": "gebieden",
+        "id": "03630012100671"
+    },
+    "bouwlaag_toegang": 1,
+    "bouwlagen": 4,
+    "bron": null,
+    "buurt": {
+        "_display": "Bloemgrachtbuurt (A06c)",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/buurt/03630000000500/"
+            }
+        },
+        "code": "06c",
+        "dataset": "gebieden",
+        "naam": "Bloemgrachtbuurt"
+    },
+    "dataset": "bag",
+    "date_modified": "2016-07-18T22:35:03.754771Z",
+    "document_mutatie": "2012-08-09",
+    "document_nummer": "GV00001551",
+    "eigendomsverhouding": {
+        "code": "02",
+        "omschrijving": "Eigendom"
+    },
+    "einde_geldigheid": null,
+    "financieringswijze": {
+        "code": "500",
+        "omschrijving": "Ongesubsidieerde bouw (500)"
+    },
+    "gebruik": {
+        "code": "1800",
+        "omschrijving": "woning"
+    },
+    "gebruiksdoel": {
+        "code": "1010",
+        "omschrijving": "BEST-woning"
+    },
+    "geometrie": {
+        "coordinates": [
+            120730.0,
+            487696.0
+        ],
+        "type": "Point"
+    },
+    "hoofdadres": {
+        "_display": "Prinsengracht 128B",
+        "_links": {
+            "self": {
+                "href": "https://api-acc.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000392601/"
+            }
+        },
+        "dataset": "bag",
+        "hoofdadres": true,
+        "landelijk_id": "0363200000392601"
+    },
+    "kadastrale_objecten": {
+        "count": 1,
+        "href": "https://api-acc.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000783909"
+    },
+    "ligging": {
+        "code": "03",
+        "omschrijving": "Tussengebouw"
+    },
+    "locatie_ingang": null,
+    "mutatie_gebruiker": "DBI",
+    "oppervlakte": 134,
+    "panden": {
+        "count": 1,
+        "href": "https://api-acc.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000783909"
+    },
+    "rechten": {
+        "count": 2,
+        "href": "https://api-acc.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000783909"
+    },
+    "reden_afvoer": null,
+    "reden_opvoer": null,
+    "sleutelverzendend": "03630000783909",
+    "status": {
+        "code": "21",
+        "omschrijving": "Verblijfsobject in gebruik"
+    },
+    "status_coordinaat": {
+        "code": "DEF",
+        "omschrijving": "Definitief punt"
+    },
+    "toegang": null,
+    "type_woonobject": {
+        "code": "M",
+        "omschrijving": "Meergezinswoning"
+    },
+    "verblijfsobjectidentificatie": "0363010000783909",
+    "verhuurbare_eenheden": null,
+    "woningvoorraad": true
+}

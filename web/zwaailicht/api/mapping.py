@@ -1,5 +1,23 @@
-import csv
 import json
+
+from django.conf import settings
+
+_LARGE = 1000000
+
+
+def get_from_table_by_range(table, request):
+    if request is None:
+        return None
+
+    for k, v in table.items():
+        lower, upper = k.split('..')
+        lower = int(lower) if lower else -_LARGE
+        upper = int(upper) if upper else _LARGE
+
+        if lower <= request <= upper:
+            return v
+
+    return None
 
 
 class Mapping(object):
@@ -8,16 +26,30 @@ class Mapping(object):
     """
 
     def __init__(self):
-        with open('mapping.json') as f:
+        with open(settings.MAPPING_FILE) as f:
             self.mapping = json.load(f)
 
-    def _get_indicator(self, indicator, field, value):
-        result = self.mapping[indicator][field].get(str(value))
-
-        if result and not result.get('waarschuwingsniveau'):
+    def _update_result(self, result, requested_value):
+        if not result:
             return None
 
+        if result.get('waarschuwingsniveau') == 4:
+            return None
+
+        result['aanvullende_informatie'] = result['aanvullende_informatie'].format(waarde=requested_value)
         return result
+
+    def _get_indicator(self, indicator, field, value):
+        table = self.mapping[indicator][field]
+        result = table.get(str(value))
+
+        return self._update_result(result, value)
+
+    def _get_indicator_by_range(self, indicator, field, value):
+        table = self.mapping[indicator][field]
+        result = get_from_table_by_range(table, value)
+
+        return self._update_result(result, value)
 
     def map_beperking(self, beperking_code):
         """
@@ -42,6 +74,18 @@ class Mapping(object):
         Return the indicator associated with BAG-plus Verblijfsobject gebruiksdoel, if any.
         """
         return self._get_indicator('Gebruik', 'Verblijfsobject.gebruiksdoel-plus', gebruiksdoel)
+
+    def map_verdieping_toegang(self, verdieping_toegang):
+        """
+        Return the indicator associated with BAG Verblijfsobject verdieping toegang, if any.
+        """
+        return self._get_indicator_by_range('Bouwlagen pand', 'Verblijfsobject.Verdieping toegang', verdieping_toegang)
+
+    def map_aantal_bouwlagen(self, aantal_bouwlagen):
+        """
+        Return the indicator associated with BAG Verblijfsobject aantal bouwlagen. if any.
+        """
+        return self._get_indicator_by_range('Bouwlagen pand', 'Verblijfsobject.Aantal bouwlagen', aantal_bouwlagen)
 
     def json(self):
         return self.mapping
