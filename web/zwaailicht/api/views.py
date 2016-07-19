@@ -18,7 +18,8 @@ class Indicator(serializers.Serializer):
     indicator = serializers.ChoiceField(("pand_status", "gebruik",), help_text="Opgevraagde indicator")
 
     waarschuwingsniveau = serializers.IntegerField(
-        help_text="1 (let op) of 2 (belangrijk). Originele indicatoren met waarde 0 worden nooit teruggegeven")
+        help_text="Waarde tussen de 1 (let op) en 3 (heel belangrijk). "
+                  "Originele indicatoren met waarde 4 worden nooit teruggegeven")
 
     label = serializers.CharField(help_text="Korte toelichtende tekst")
     aanvullende_informatie = serializers.CharField()
@@ -44,10 +45,6 @@ class MappingViewSet(viewsets.ViewSet):
 
 
 class PandStatusViewSet(viewsets.ViewSet):
-    """
-    De pand status geeft een overzicht van eigenschappen van de panden die horen bij dit verblijfsobject.
-    """
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.mapping = mapping.Mapping()
@@ -58,6 +55,7 @@ class PandStatusViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
+        Informatie over de bouwkundige status van het pand
         ---
         parameters:
            - name: pk
@@ -66,6 +64,11 @@ class PandStatusViewSet(viewsets.ViewSet):
              type: string
              paramType: path
         serializer: Result
+        produces:
+           - application/json
+        responseMessages:
+           - code: 404
+             message: Onbekend BAG ID
         """
         indicatoren = []
 
@@ -96,10 +99,6 @@ class PandStatusViewSet(viewsets.ViewSet):
 
 
 class GebruikViewSet(viewsets.ViewSet):
-    """
-    Gebruik geeft informatie over het daadwerkelijk gebruik van een verblijfsobject.
-    """
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.mapping = mapping.Mapping()
@@ -110,6 +109,7 @@ class GebruikViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, pk=None):
         """
+        Informatie over gebruik en bewoners van dit verblijfsobject.
         ---
         parameters:
            - name: pk
@@ -118,6 +118,11 @@ class GebruikViewSet(viewsets.ViewSet):
              type: string
              paramType: path
         serializer: Result
+        produces:
+           - application/json
+        responseMessages:
+           - code: 404
+             message: Onbekend BAG ID
         """
         indicatoren = []
 
@@ -144,10 +149,6 @@ class GebruikViewSet(viewsets.ViewSet):
 
 
 class BouwlagenViewSet(viewsets.ViewSet):
-    """
-    Bouwlagen geeft informatie over het aantal bouwlagen van een verblijfsobject.
-    """
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.mapping = mapping.Mapping()
@@ -157,6 +158,22 @@ class BouwlagenViewSet(viewsets.ViewSet):
         return Response("Gebruik de url /bouwlagen/{bag_id} om gedetailleerde informatie terug te krijgen.")
 
     def retrieve(self, request, pk=None):
+        """
+        Informatie over de hoogte en ingang van het pand.
+        ---
+        parameters:
+           - name: pk
+             description: Landelijk BAG ID van een verblijfsobject
+             required: true
+             type: string
+             paramType: path
+        serializer: Result
+        produces:
+           - application/json
+        responseMessages:
+           - code: 404
+             message: Onbekend BAG ID
+        """
         indicatoren = []
 
         vbo = self.client.get_vbo(pk)

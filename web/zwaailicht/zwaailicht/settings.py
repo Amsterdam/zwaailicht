@@ -125,5 +125,6 @@ SWAGGER_SETTINGS = {
         'api-root',
         'status_pand-list',
         'gebruik-list',
+        'bouwlagen-list',
     ],
 }
