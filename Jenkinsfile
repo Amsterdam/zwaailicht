@@ -40,7 +40,7 @@ node {
     stage "Build"
 
         tryStep "build", {
-            def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BRANCH}", "web")
+            def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:develop", "web")
             image.push()
         }
 
