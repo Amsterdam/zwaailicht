@@ -70,9 +70,9 @@ node {
     stage "Deploy to PROD"
 
         tryStep "image tagging", {
-            def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BUILD_NUMBER}")
+            def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
             image.pull()
-            
+
             image.push("master")
             image.push("latest")
         }
