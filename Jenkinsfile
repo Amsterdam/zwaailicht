@@ -48,7 +48,7 @@ node {
 
     stage "Build"
 
-        try {
+        tryStep "build", {
             def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BRANCH}", "web")
             image.push()
 
@@ -56,14 +56,10 @@ node {
                 image.push("latest")
             }
         }
-        catch (err) {
-            warning 'build failure'
-            throw err
-        }
 
     stage "Deploy"
 
-        try {
+        tryStep "deploy", {
             build job: 'Subtask_Openstack_Playbook',
                     parameters: [
                             [$class: 'StringParameterValue', name: 'INVENTORY', value: INVENTORY],
@@ -71,8 +67,5 @@ node {
                             [$class: 'StringParameterValue', name: 'BRANCH', value: BRANCH],
                     ]
         }
-        catch (err) {
-            warning 'deployment failure'
-            throw err
-        }
+
 }
