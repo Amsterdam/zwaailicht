@@ -14,6 +14,7 @@ node {
         }
         catch (err) {
             slackSend message: "Zwaailicht service: build failure", channel: '#ci-channel'
+            throw err
         }
 
 
