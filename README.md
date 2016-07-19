@@ -26,3 +26,4 @@ Voor het bijwerken van de mapping tussen BAG/WKPB/etc codes en de daadwerkelijke
 De huidige mapping file is altijd te zien op /zwaailicht/mapping/
 
 Vervangen door een nieuwe mapping is een kwestie van overschrijven van `web/zwaailicht/mapping.json`
+
