@@ -18,10 +18,6 @@ def tryStep(String message, Closure block, Closure tearDown = null) {
 }
 
 
-def warning(String msg) {
-    slackSend message: "${JOB_NAME}: $msg ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
-}
-
 node {
 
     stage "Checkout"
@@ -62,7 +58,7 @@ node {
 
     stage "Wait for approval"
 
-        input "Deploy ${env.JOB_NAME} to Production?"
+        input "Deploy to Production?"
 
     stage "Deploy to PROD"
 
