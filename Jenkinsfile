@@ -20,41 +20,45 @@ def tryStep(String message, Closure block, Closure tearDown = null) {
 node {
 
     stage "Checkout"
-        checkout scm
+    checkout scm
 
-    stage "Test"
+    stage "Build base image"
 
-        tryStep "build", {
-            sh "docker-compose build"
-        }
+    tryStep "build", {
+        sh "docker-compose build"
+    }
 
-        tryStep "test", {
-            sh "docker-compose run --rm -u root web python manage.py jenkins"
-        }, {
-            step([$class: "JUnitResultArchiver", testResults: "reports/junit.xml"])
+    stage name: 'Test', concurrency: 1
 
-            sh "docker-compose stop"
-            sh "docker-compose rm -f"
-        }
+    tryStep "test", {
+        sh "docker-compose run --rm -u root web python manage.py jenkins"
+    }, {
+        step([$class: "JUnitResultArchiver", testResults: "reports/junit.xml"])
 
-    stage "Build"
+        sh "docker-compose stop"
+        sh "docker-compose rm -f"
+    }
 
-        tryStep "build", {
-            def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
-            image.push()
-            image.push("develop")
-        }
+    stage "Build develop image"
 
-    stage "Deploy to ACC"
+    tryStep "build", {
+        def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
+        image.push()
+        image.push("develop")
+    }
+}
 
-        tryStep "deployment", {
-            build job: 'Subtask_Openstack_Playbook',
-                    parameters: [
-                            [$class: 'StringParameterValue', name: 'INVENTORY', value: 'acceptance'],
-                            [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
-                            [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
-                    ]
-        }
+node {
+    stage name: "Deploy to ACC", concurrency: 1
+
+    tryStep "deployment", {
+        build job: 'Subtask_Openstack_Playbook',
+                parameters: [
+                        [$class: 'StringParameterValue', name: 'INVENTORY', value: 'acceptance'],
+                        [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
+                        [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
+                ]
+    }
 }
 
 
@@ -64,23 +68,26 @@ input "Deploy to Production?"
 
 
 node {
-    stage "Deploy to PROD"
+    stage 'Build production image'
 
-        tryStep "image tagging", {
-            def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
-            image.pull()
+    tryStep "image tagging", {
+        def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
+        image.pull()
 
-            image.push("master")
-            image.push("latest")
-        }
+        image.push("master")
+        image.push("latest")
+    }
+}
 
-        tryStep "deployment", {
-            build job: 'Subtask_Openstack_Playbook',
-                    parameters: [
-                            [$class: 'StringParameterValue', name: 'INVENTORY', value: 'production'],
-                            [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
-                            [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
-                    ]
-        }
+node {
+    stage name: "Deploy to PROD", concurrency: 1
 
+    tryStep "deployment", {
+        build job: 'Subtask_Openstack_Playbook',
+                parameters: [
+                        [$class: 'StringParameterValue', name: 'INVENTORY', value: 'production'],
+                        [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
+                        [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
+                ]
+    }
 }
