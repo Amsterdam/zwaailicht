@@ -57,7 +57,7 @@ node {
             build job: 'Subtask_Openstack_Playbook',
                     parameters: [
                             [$class: 'StringParameterValue', name: 'INVENTORY', value: INVENTORY],
-                            [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
+                            [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht123.yml'],
                             [$class: 'StringParameterValue', name: 'BRANCH', value: BRANCH],
                     ]
         }
