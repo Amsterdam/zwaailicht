@@ -91,7 +91,7 @@
     },
     "panden": {
         "count": 1,
-        "href": "http://api/bag/pand/?verblijfsobjecten__id=03630000998532"
+        "href": "http://api/bag/pand/?verblijfsobjecten__id=0363010000998532"
     },
     "kadastrale_objecten": {
         "count": 1,
