@@ -1,5 +1,5 @@
 web:
-  build: ./web
+  build: ./webFAIL
   ports:
     - "8000"
   volumes:
