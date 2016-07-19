@@ -3,7 +3,26 @@
 String BRANCH = "${env.BRANCH_NAME}"
 String INVENTORY = (BRANCH == "master" ? "production" : "acceptance")
 
-def warning(msg) {
+
+static def tryStep(String message, Closure block, Closure tearDown = null) {
+    try {
+        block();
+    }
+    catch (Throwable t) {
+        slackSend message: "${JOB_NAME}: ${message} failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
+
+        warning(message)
+        throw t;
+    }
+    finally {
+        if (tearDown) {
+            tearDown();
+        }
+    }
+}
+
+
+def warning(String msg) {
     slackSend message: "${JOB_NAME}: $msg ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
 }
 
@@ -13,23 +32,14 @@ node {
         checkout scm
 
     stage "Test"
-        try {
+
+        tryStep "build", {
             sh "docker-compose build"
         }
-        catch (err) {
-            warning 'build failure'
-            throw err
-        }
 
-
-        try {
+        tryStep "test", {
             sh "docker-compose run --rm -u root web python manage.py jenkins"
-        }
-        catch (err) {
-            warning 'test failures'
-            throw err
-        }
-        finally {
+        }, {
             step([$class: "JUnitResultArchiver", testResults: "reports/junit.xml"])
 
             sh "docker-compose stop"
