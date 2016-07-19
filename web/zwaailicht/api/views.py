@@ -168,6 +168,11 @@ class BouwlagenViewSet(viewsets.ViewSet):
         if mapped:
             indicatoren.append(mapped)
 
+        verdieping_toegang = vbo.verdieping_toegang
+        mapped = self.mapping.map_verdieping_toegang(verdieping_toegang)
+        if mapped:
+            indicatoren.append(mapped)
+
         return Response(data={
             'locatie': {
                 'bag_id': pk,

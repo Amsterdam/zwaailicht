@@ -118,8 +118,30 @@ class BouwlagenTest(APITestCase):
         indicatoren = response.data['indicatoren']
         self.assertNotEqual([], indicatoren)
 
-        self.assertEqual('Bouwlagen pand', indicatoren[0]['indicator'])
-        self.assertEqual(2, indicatoren[0]['waarschuwingsniveau'])
-        self.assertEqual('Hoog gebouw', indicatoren[0]['label'])
-        self.assertEqual('Aantal bouwlagen: 13', indicatoren[0]['aanvullende_informatie'])
+        self.assertDictEqual({
+            'waarschuwingsniveau': 2,
+            'indicator': 'Bouwlagen pand',
+            'label': 'Hoog gebouw',
+            'aanvullende_informatie': 'Aantal bouwlagen: 13',
+        }, indicatoren[0])
 
+    def test_response_ingang(self):
+        response = self.client.get('/zwaailicht/bouwlagen/0363010000783909/')
+        self.assertIn('indicatoren', response.data)
+
+        indicatoren = response.data['indicatoren']
+        self.assertNotEqual([], indicatoren)
+
+        self.assertDictEqual({
+            'waarschuwingsniveau': 3,
+            'indicator': 'Bouwlagen pand',
+            'label': 'Hoog gebouw',
+            'aanvullende_informatie': 'Aantal bouwlagen: 4',
+        }, indicatoren[0])
+
+        self.assertDictEqual({
+            "waarschuwingsniveau": 3,
+            "indicator": "Bouwlagen pand",
+            "aanvullende_informatie": "Toegang op verdieping 1",
+            "label": "Toegang op verdieping"
+        }, indicatoren[1])
