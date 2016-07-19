@@ -62,7 +62,7 @@ node {
 }
 
 
-stage "Waiting for approval"
+stage name: "Waiting for approval", concurrency: 1
 
 input "Deploy to Production?"
 
