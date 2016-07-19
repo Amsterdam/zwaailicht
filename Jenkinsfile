@@ -18,8 +18,6 @@ node {
         }
         catch (err) {
             warning 'Zwaailicht service: build failure'
-
-            slackSend message: "Zwaailicht service: build failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
             throw err
         }
 
@@ -28,7 +26,7 @@ node {
             sh "docker-compose run --rm -u root web python manage.py jenkins"
         }
         catch (err) {
-            slackSend message: "Zwaailicht service: test failures", channel: '#ci-channel'
+            warning 'Zwaailicht service: test failures'
             throw err
         }
         finally {
@@ -49,7 +47,7 @@ node {
             }
         }
         catch (err) {
-            slackSend message: "Zwaailicht service: build failure", channel: '#ci-channel'
+            warning 'Zwaailicht service: build failure'
             throw err
         }
 
@@ -64,7 +62,7 @@ node {
                     ]
         }
         catch (err) {
-            slackSend message: "Zwaailicht service: deployment failure", channel: '#ci-channel'
+            warning 'Zwaailicht service: deployment failure'
             throw err
         }
 }
