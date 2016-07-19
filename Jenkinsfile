@@ -40,8 +40,9 @@ node {
     stage "Build"
 
         tryStep "build", {
-            def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:develop", "web")
+            def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
             image.push()
+            image.push("develop")
         }
 
     stage "Deploy to ACC"
@@ -69,8 +70,9 @@ node {
     stage "Deploy to PROD"
 
         tryStep "image tagging", {
-            def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:develop")
+            def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BUILD_NUMBER}")
             image.pull()
+            
             image.push("master")
             image.push("latest")
         }
