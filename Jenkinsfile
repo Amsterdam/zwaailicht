@@ -22,14 +22,14 @@ node {
     stage "Checkout"
     checkout scm
 
-    stage "Build base image"
 
+    stage "Build base image"
     tryStep "build", {
         sh "docker-compose build"
     }
 
-    stage name: 'Test', concurrency: 1
 
+    stage 'Test'
     tryStep "test", {
         sh "docker-compose run --rm -u root web python manage.py jenkins"
     }, {
@@ -40,7 +40,6 @@ node {
     }
 
     stage "Build develop image"
-
     tryStep "build", {
         def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
         image.push()
@@ -50,7 +49,6 @@ node {
 
 node {
     stage name: "Deploy to ACC", concurrency: 1
-
     tryStep "deployment", {
         build job: 'Subtask_Openstack_Playbook',
                 parameters: [
@@ -62,14 +60,13 @@ node {
 }
 
 
-stage name: "Waiting for approval", concurrency: 1
+stage name: 'Waiting for approval'
 
 input "Deploy to Production?"
 
 
 node {
     stage 'Build production image'
-
     tryStep "image tagging", {
         def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
         image.pull()
@@ -81,7 +78,6 @@ node {
 
 node {
     stage name: "Deploy to PROD", concurrency: 1
-
     tryStep "deployment", {
         build job: 'Subtask_Openstack_Playbook',
                 parameters: [
