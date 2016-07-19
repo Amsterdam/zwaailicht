@@ -1,9 +1,5 @@
 #!groovy
 
-String BRANCH = "${env.BRANCH_NAME}"
-String INVENTORY = (BRANCH == "master" ? "production" : "acceptance")
-
-
 def tryStep(String message, Closure block, Closure tearDown = null) {
     try {
         block();
@@ -51,20 +47,36 @@ node {
         tryStep "build", {
             def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${BRANCH}", "web")
             image.push()
-
-            if (BRANCH == "master") {
-                image.push("latest")
-            }
         }
 
-    stage "Deploy"
+    stage "Deploy to ACC"
 
-        tryStep "deploy", {
+        tryStep "deployment", {
             build job: 'Subtask_Openstack_Playbook',
                     parameters: [
-                            [$class: 'StringParameterValue', name: 'INVENTORY', value: INVENTORY],
+                            [$class: 'StringParameterValue', name: 'INVENTORY', value: 'acceptance'],
                             [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
-                            [$class: 'StringParameterValue', name: 'BRANCH', value: BRANCH],
+                            [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
+                    ]
+        }
+
+    stage "Wait for approval"
+
+        input "Deploy ${env.JOB_NAME} to Production?"
+
+    stage "Deploy to PROD"
+
+        tryStep "image tagging", {
+            image.push("master")
+            image.push("latest")
+        }
+
+        tryStep "deployment", {
+            build job: 'Subtask_Openstack_Playbook',
+                    parameters: [
+                            [$class: 'StringParameterValue', name: 'INVENTORY', value: 'production'],
+                            [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
+                            [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
                     ]
         }
 
