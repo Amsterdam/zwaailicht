@@ -143,6 +143,24 @@ class GebruikViewSet(viewsets.ViewSet):
         })
 
 
+class BouwlagenViewSet(viewsets.ViewSet):
+    """
+    Bouwlagen geeft informatie over het aantal bouwlagen van een verblijfsobject.
+    """
+
+    def list(self, request):
+        return Response("Gebruik de url /bouwlagen/{bag_id} om gedetailleerde informatie terug te krijgen.")
+
+    def retrieve(self, request, pk=None):
+        indicatoren = []
+        return Response(data={
+            'locatie': {
+                'bag_id': pk,
+            },
+            'indicatoren': indicatoren,
+        })
+
+
 def health_check(request):
     result = "OK"
     status = 200

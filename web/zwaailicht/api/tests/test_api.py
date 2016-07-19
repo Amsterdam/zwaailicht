@@ -84,3 +84,29 @@ class GebruikTest(APITestCase):
         response = self.client.get('/zwaailicht/gebruik/0363010000686941/')
         self.assertEquals(200, response.status_code)
 
+
+@patch_requests
+@override_settings(
+    VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/",
+    MAPPING_FILE='api/tests/fixture_files/mapping.json'
+)
+class BouwlagenTest(APITestCase):
+    def test_simple_response(self):
+        """
+        Verify that the endpoint exists
+        """
+        response = self.client.get('/zwaailicht/bouwlagen/0363010000758545/')
+        self.assertEquals(200, response.status_code)
+
+    def test_response_contains_locatie_met_bag_id(self):
+        response = self.client.get('/zwaailicht/bouwlagen/0363010000758545/')
+        self.assertIn('locatie', response.data)
+        self.assertIn('bag_id', response.data['locatie'])
+        self.assertEqual('0363010000758545', response.data['locatie']['bag_id'])
+
+    def test_response_with_null_contains_indicatoren(self):
+        response = self.client.get('/zwaailicht/bouwlagen/0363010000758545/')
+        self.assertIn('indicatoren', response.data)
+
+        indicatoren = response.data['indicatoren']
+        self.assertListEqual([], indicatoren)
