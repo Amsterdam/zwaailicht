@@ -11,13 +11,13 @@ class ClientTest(TestCase):
         self.client = client.Client()
 
     def test_get_vbo(self):
-        vbo = self.client.get_vbo('0363010000998532')
+        vbo = self.client.get_verblijfsobject('0363010000998532')
 
         self.assertIsNotNone(vbo)
         self.assertEquals('0363010000998532', vbo.landelijk_id)
 
     def test_get_vbo_follow_pand_relatie(self):
-        vbo = self.client.get_vbo('0363010000998532')
+        vbo = self.client.get_verblijfsobject('0363010000998532')
         panden = self.client.get_panden(vbo)
 
         self.assertIsNotNone(panden)
@@ -25,7 +25,7 @@ class ClientTest(TestCase):
         self.assertEquals("31", panden[0].pand_status)
 
     def test_get_vbo_follow_beperking_relatie(self):
-        vbo = self.client.get_vbo('0363010000758545')
+        vbo = self.client.get_verblijfsobject('0363010000758545')
         beperkingen = self.client.get_beperkingen(vbo)
 
         self.assertIsNotNone(beperkingen)
