@@ -5,19 +5,31 @@ from django.conf import settings
 _LARGE = 1000000
 
 
+def _is_in_range(value, range_definition):
+    range_parts = range_definition.split('..')
+    if len(range_parts) != 2:
+        raise ValueError("Incorrect range definition: {}".format(range_definition))
+
+    lower, upper = range_parts
+    lower = int(lower) if lower else -_LARGE
+    upper = int(upper) if upper else _LARGE
+
+    return lower <= value <= upper
+
+
 def get_from_table_by_range(table, request):
     if request is None:
         return None
 
-    for k, v in table.items():
-        lower, upper = k.split('..')
-        lower = int(lower) if lower else -_LARGE
-        upper = int(upper) if upper else _LARGE
+    results = [v for (range_definition, v) in table.items() if _is_in_range(request, range_definition)]
 
-        if lower <= request <= upper:
-            return v
+    if not results:
+        return None
 
-    return None
+    if len(results) == 1:
+        return results[0]
+
+    raise ValueError("Overlapping ranges found for value {}".format(request))
 
 
 class Mapping(object):
