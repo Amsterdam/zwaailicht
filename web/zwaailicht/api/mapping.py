@@ -32,6 +32,21 @@ def get_from_table_by_range(table, request):
     raise ValueError("Overlapping ranges found for value {}".format(request))
 
 
+def normalize_indicator(result, requested_value):
+    """
+    Filtert niet-interessante indicatoren, en injecteert `requested_value` in de relevante velden.
+    """
+
+    if not result:
+        return None
+
+    if result.get('waarschuwingsniveau') == 4:
+        return None
+
+    result['aanvullende_informatie'] = result['aanvullende_informatie'].format(waarde=requested_value)
+    return result
+
+
 class Mapping(object):
     """
     Mapping from WKPB and BAG+ attributes to Indicatoren.
@@ -41,27 +56,17 @@ class Mapping(object):
         with open(settings.MAPPING_FILE) as f:
             self.mapping = json.load(f)
 
-    def _update_result(self, result, requested_value):
-        if not result:
-            return None
-
-        if result.get('waarschuwingsniveau') == 4:
-            return None
-
-        result['aanvullende_informatie'] = result['aanvullende_informatie'].format(waarde=requested_value)
-        return result
-
     def _get_indicator(self, indicator, field, value):
         table = self.mapping[indicator][field]
         result = table.get(str(value))
 
-        return self._update_result(result, value)
+        return normalize_indicator(result, value)
 
     def _get_indicator_by_range(self, indicator, field, value):
         table = self.mapping[indicator][field]
         result = get_from_table_by_range(table, value)
 
-        return self._update_result(result, value)
+        return normalize_indicator(result, value)
 
     def map_beperking(self, beperking_code):
         """
