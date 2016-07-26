@@ -65,7 +65,7 @@ class Client(object):
     def __init__(self):
         pass
 
-    def get_vbo(self, landelijk_id):
+    def get_verblijfsobject(self, landelijk_id):
         """
         Obtains a verblijfsobject.
 
@@ -82,17 +82,17 @@ class Client(object):
 
         return Verblijfsobject(res.json())
 
-    def get_panden(self, vbo):
+    def get_panden(self, verblijfsobject):
         """
         Returns all Pand objects related to a Verblijfsobject
-        :param vbo:
+        :param verblijfsobject:
         :return: a list of Pand objects, never None
         """
-        url = vbo.panden
+        url = verblijfsobject.panden
 
         res = requests.get(url)
         if not res.ok:
-            log.warn("Could not retrieve panden for VBO %s from %s", vbo, url)
+            log.warn("Could not retrieve panden for VBO %s from %s", verblijfsobject, url)
             return []
 
         pand_urls = [obj.get('_links', {}).get('self', {}).get('href') for obj in res.json().get('results', [])]
@@ -100,17 +100,17 @@ class Client(object):
 
         return [Pand(res.json()) for res in pand_responses if res.ok]
 
-    def get_beperkingen(self, vbo):
+    def get_beperkingen(self, verblijfsobject):
         """
         Returns all Beperking objects related to a Verblijfsobject
-        :param vbo:
+        :param verblijfsobject:
         :return: a list of Beperking objects, never None
         """
-        url = vbo.beperkingen
+        url = verblijfsobject.beperkingen
 
         res = requests.get(url)
         if not res.ok:
-            log.warn("Could not retrieve beperkingen for VBO %s from %s", vbo, url)
+            log.warn("Could not retrieve beperkingen for VBO %s from %s", verblijfsobject, url)
             return []
 
         beperking_urls = [obj.get('_links', {}).get('self', {}).get('href') for obj in res.json().get('results', [])]

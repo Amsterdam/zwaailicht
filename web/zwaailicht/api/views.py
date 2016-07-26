@@ -72,18 +72,18 @@ class PandStatusViewSet(viewsets.ViewSet):
         """
         indicatoren = []
 
-        vbo = self.client.get_vbo(pk)
-        if not vbo:
+        verblijfsobject = self.client.get_verblijfsobject(pk)
+        if not verblijfsobject:
             raise Http404()
 
-        panden = self.client.get_panden(vbo)
+        panden = self.client.get_panden(verblijfsobject)
         pand_status = [p.pand_status for p in panden]
         for s in pand_status:
             mapped = self.mapping.map_pand_status(s)
             if mapped:
                 indicatoren.append(mapped)
 
-        beperkingen = self.client.get_beperkingen(vbo)
+        beperkingen = self.client.get_beperkingen(verblijfsobject)
         beperking_codes = [b.beperking for b in beperkingen]
         for c in beperking_codes:
             mapped = self.mapping.map_beperking(c)
@@ -126,16 +126,16 @@ class GebruikViewSet(viewsets.ViewSet):
         """
         indicatoren = []
 
-        vbo = self.client.get_vbo(pk)
-        if not vbo:
+        verblijfsobject = self.client.get_verblijfsobject(pk)
+        if not verblijfsobject:
             raise Http404()
 
-        gebruiksdoel = vbo.gebruiksdoel
+        gebruiksdoel = verblijfsobject.gebruiksdoel
         mapped = self.mapping.map_gebruiksdoel(gebruiksdoel)
         if mapped:
             indicatoren.append(mapped)
 
-        gebruikscode = vbo.gebruikscode
+        gebruikscode = verblijfsobject.gebruikscode
         mapped = self.mapping.map_gebruikscode(gebruikscode)
         if mapped:
             indicatoren.append(mapped)
@@ -176,16 +176,16 @@ class BouwlagenViewSet(viewsets.ViewSet):
         """
         indicatoren = []
 
-        vbo = self.client.get_vbo(pk)
-        if not vbo:
+        verblijfsobject = self.client.get_verblijfsobject(pk)
+        if not verblijfsobject:
             raise Http404()
 
-        aantal_bouwlagen = vbo.aantal_bouwlagen
+        aantal_bouwlagen = verblijfsobject.aantal_bouwlagen
         mapped = self.mapping.map_aantal_bouwlagen(aantal_bouwlagen)
         if mapped:
             indicatoren.append(mapped)
 
-        verdieping_toegang = vbo.verdieping_toegang
+        verdieping_toegang = verblijfsobject.verdieping_toegang
         mapped = self.mapping.map_verdieping_toegang(verdieping_toegang)
         if mapped:
             indicatoren.append(mapped)
