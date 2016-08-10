@@ -111,8 +111,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
 
-VBO_URI_TEMPLATE = os.environ.get('VBO_URI_TEMPLATE',
-                                  "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/")
+VBO_URI_TEMPLATE = os.environ.get(
+    'VBO_URI_TEMPLATE',
+    "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/")
 
 MAPPING_FILE = 'mapping.json'
 
