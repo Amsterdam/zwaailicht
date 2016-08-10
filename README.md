@@ -27,3 +27,14 @@ De huidige mapping file is altijd te zien op /zwaailicht/mapping/
 
 Vervangen door een nieuwe mapping is een kwestie van overschrijven van `web/zwaailicht/mapping.json`
 
+
+Voorbeelden
+-----------
+
+Status pand: /zwaailicht/status_pand/0363010000941193/
+
+Gebruik: /zwaailicht/gebruik/0363010000998532/
+
+Bouwlagen: /zwaailicht/bouwlagen/0363010000747356/
+
+
