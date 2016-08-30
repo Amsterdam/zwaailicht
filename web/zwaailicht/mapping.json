@@ -52,13 +52,13 @@
 			"27": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Pand in sloopfase [Status]",
+				"aanvullende_informatie": "Pand in sloopfase",
 				"label": "Pand in sloopfase"
 			},
 			"26": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Pand in bouwfase [Status]",
+				"aanvullende_informatie": "Pand in bouwfase",
 				"label": "Pand in bouwfase"
 			},
 			"31": {
@@ -70,19 +70,19 @@
 			"32": {
 				"waarschuwingsniveau": 3,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Pand buiten gebruik [Status]",
+				"aanvullende_informatie": "Pand buiten gebruik",
 				"label": "Pand buiten gebruik"
 			},
 			"24": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Pand in bouwfase [Status]",
+				"aanvullende_informatie": "Pand in bouwfase",
 				"label": "Pand in bouwfase"
 			},
 			"28": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Pand gesloopt [Status]",
+				"aanvullende_informatie": "Pand gesloopt",
 				"label": "Pand in sloopfase"
 			},
 			"30": {
@@ -94,13 +94,13 @@
 			"29": {
 				"waarschuwingsniveau": 3,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Niet gerealiseerd pand [Status]",
+				"aanvullende_informatie": "Niet gerealiseerd pand",
 				"label": "Niet gerealiseerd pand"
 			},
 			"25": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Pand in bouwfase [Status]",
+				"aanvullende_informatie": "Pand in bouwfase",
 				"label": "Pand in bouwfase"
 			}
 		},
@@ -108,7 +108,7 @@
 			"KW": {
 				"waarschuwingsniveau": 3,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Melding, bevel of beschikkingÂ Wet bodembescherming [Status]",
+				"aanvullende_informatie": "Melding, bevel of beschikkingÂ Wet bodembescherming",
 				"label": "Beperking pand"
 			},
 			"HV": {
@@ -126,13 +126,13 @@
 			"WV": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Plicht tot het treffen van voorzieningen [Status]",
+				"aanvullende_informatie": "Plicht tot het treffen van voorzieningen",
 				"label": "Beperking pand"
 			},
 			"WG": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Plicht tot gebruik of beheer door derden [Status]",
+				"aanvullende_informatie": "Plicht tot gebruik of beheer door derden",
 				"label": "Beperking pand"
 			},
 			"VI": {
@@ -150,25 +150,25 @@
 			"HS": {
 				"waarschuwingsniveau": 3,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Splitsing pand zonder vergunning [Status]",
+				"aanvullende_informatie": "Splitsing pand zonder vergunning",
 				"label": "Beperking pand"
 			},
 			"GG": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Monument [Status]",
+				"aanvullende_informatie": "Monument",
 				"label": "Beperking pand"
 			},
 			"WI": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Sluiting pand  [Status]",
+				"aanvullende_informatie": "Sluiting pand ",
 				"label": "Beperking pand"
 			},
 			"OS": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Sluiting pand obv Opiumwet [Status]",
+				"aanvullende_informatie": "Sluiting pand obv Opiumwet",
 				"label": "Beperking pand"
 			},
 			"WA": {
@@ -216,13 +216,13 @@
 			"WU": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Staat van het pand voldoet niet aan Woningwet  [Status]",
+				"aanvullende_informatie": "Staat van het pand voldoet niet aan Woningwet ",
 				"label": "Beperking pand"
 			},
 			"GS": {
 				"waarschuwingsniveau": 2,
 				"indicator": "Status pand",
-				"aanvullende_informatie": "Sluiting pand  [Status]",
+				"aanvullende_informatie": "Sluiting pand ",
 				"label": "Beperking pand"
 			}
 		}
