@@ -23,14 +23,9 @@ node {
         checkout scm
     }
 
-    stage ("Build base image") {
-        tryStep "build", {
-            sh "docker-compose build"
-        }
-    }
-
     stage('Test') {
         tryStep "test", {
+            sh "docker-compose build"
             sh "docker-compose run --rm -u root web python manage.py jenkins"
         }, {
             step([$class: "JUnitResultArchiver", testResults: "reports/junit.xml"])
@@ -44,6 +39,8 @@ node {
             def image = docker.build("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
             image.push()
             image.push("develop")
+            image.push("acceptance")
+            image.push("Production")
         }
     }
 }
@@ -55,7 +52,6 @@ node {
                     parameters: [
                             [$class: 'StringParameterValue', name: 'INVENTORY', value: 'acceptance'],
                             [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
-                            [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
                     ]
         }
     }
@@ -63,6 +59,7 @@ node {
 
 
 stage('Waiting for approval') {
+    slackSend channel: '#ci-channel', color: 'warning', message: 'Afvalophaalgebieden is waiting for Production Release - please confirm'
     input "Deploy to Production?"
 }
 
@@ -74,7 +71,7 @@ node {
             def image = docker.image("admin.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
             image.pull()
 
-            image.push("master")
+            image.push("production")
             image.push("latest")
         }
     }
@@ -87,7 +84,6 @@ node {
                     parameters: [
                             [$class: 'StringParameterValue', name: 'INVENTORY', value: 'production'],
                             [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-zwaailicht.yml'],
-                            [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
                     ]
         }
     }
