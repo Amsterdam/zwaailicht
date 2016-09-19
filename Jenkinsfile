@@ -57,7 +57,7 @@ node {
 
 
 stage('Waiting for approval') {
-    slackSend channel: '#ci-channel', color: 'warning', message: 'Afvalophaalgebieden is waiting for Production Release - please confirm'
+    slackSend channel: '#ci-channel', color: 'warning', message: 'Zwaailicht is waiting for Production Release - please confirm'
     input "Deploy to Production?"
 }
 
