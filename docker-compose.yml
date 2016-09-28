@@ -2,8 +2,6 @@ web:
   build: ./web
   ports:
     - "8000:8000"
-  volumes:
-    - ./reports:/app/reports
   environment:
     VBO_URI_TEMPLATE: "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/"
 

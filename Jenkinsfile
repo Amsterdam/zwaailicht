@@ -28,8 +28,6 @@ node {
             sh "docker-compose build"
             sh "docker-compose run --rm -u root web python manage.py jenkins"
         }, {
-            step([$class: "JUnitResultArchiver", testResults: "reports/junit.xml"])
-
             sh "docker-compose down"
         }
     }
