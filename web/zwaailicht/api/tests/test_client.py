@@ -5,7 +5,8 @@ from .. import client
 
 
 @patch_requests
-@override_settings(VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/")
+@override_settings(
+    VBO_URI_TEMPLATE="http://api/bag/verblijfsobject/{landelijk_id}/")
 class ClientTest(TestCase):
     def setUp(self):
         self.client = client.Client()

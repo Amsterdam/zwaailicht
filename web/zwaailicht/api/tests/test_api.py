@@ -33,7 +33,8 @@ class PandStatusTest(APITestCase):
         self.assertEqual('Status pand', indicatoren[0]['indicator'])
         self.assertEqual(3, indicatoren[0]['waarschuwingsniveau'])
         self.assertEqual('Beperking pand', indicatoren[0]['label'])
-        self.assertEqual('Splitsing pand zonder vergunning [Status]', indicatoren[0]['aanvullende_informatie'])
+        self.assertEqual('Splitsing pand zonder vergunning [Status]',
+                         indicatoren[0]['aanvullende_informatie'])
 
     def test_unknown_vbo_is_404(self):
         response = self.client.get('/zwaailicht/status_pand/1234/')

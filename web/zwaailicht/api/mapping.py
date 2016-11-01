@@ -8,7 +8,8 @@ _LARGE = 1000000
 def _is_in_range(value, range_definition):
     range_parts = range_definition.split('..')
     if len(range_parts) != 2:
-        raise ValueError("Incorrect range definition: {}".format(range_definition))
+        raise ValueError(
+            "Incorrect range definition: {}".format(range_definition))
 
     lower, upper = range_parts
     lower = int(lower) if lower else -_LARGE
@@ -21,7 +22,8 @@ def get_from_table_by_range(table, request):
     if request is None:
         return None
 
-    results = [v for (range_definition, v) in table.items() if _is_in_range(request, range_definition)]
+    results = [v for (range_definition, v) in table.items() if
+               _is_in_range(request, range_definition)]
 
     if not results:
         return None
@@ -43,7 +45,8 @@ def normalize_indicator(result, requested_value):
     if result.get('waarschuwingsniveau') == 4:
         return None
 
-    result['aanvullende_informatie'] = result['aanvullende_informatie'].format(waarde=requested_value)
+    result['aanvullende_informatie'] = result['aanvullende_informatie'].format(
+        waarde=requested_value)
     return result
 
 
@@ -72,37 +75,46 @@ class Mapping(object):
         """
         Return the indicator associated with WKPB Beperking code, if any.
         """
-        return self._get_indicator('Status pand', 'Beperking.beperkingcode', beperking_code)
+        return self._get_indicator('Status pand', 'Beperking.beperkingcode',
+                                   beperking_code)
 
     def map_pand_status(self, pand_status):
         """
         Return the indicator associated with BAG Pand status code, if any.
         """
-        return self._get_indicator('Status pand', 'Pand.Pandstatus', pand_status)
+        return self._get_indicator('Status pand', 'Pand.Pandstatus',
+                                   pand_status)
 
     def map_gebruikscode(self, gebruikscode):
         """
         Return the indicator associated with BAG Verblijfsobject gebruikscode, if any.
         """
-        return self._get_indicator('Gebruik', 'Verblijfsobject.gebruikscode', gebruikscode)
+        return self._get_indicator('Gebruik', 'Verblijfsobject.gebruikscode',
+                                   gebruikscode)
 
     def map_gebruiksdoel(self, gebruiksdoel):
         """
         Return the indicator associated with BAG-plus Verblijfsobject gebruiksdoel, if any.
         """
-        return self._get_indicator('Gebruik', 'Verblijfsobject.gebruiksdoel-plus', gebruiksdoel)
+        return self._get_indicator('Gebruik',
+                                   'Verblijfsobject.gebruiksdoel-plus',
+                                   gebruiksdoel)
 
     def map_verdieping_toegang(self, verdieping_toegang):
         """
         Return the indicator associated with BAG Verblijfsobject verdieping toegang, if any.
         """
-        return self._get_indicator_by_range('Bouwlagen pand', 'Verblijfsobject.Verdieping toegang', verdieping_toegang)
+        return self._get_indicator_by_range('Bouwlagen pand',
+                                            'Verblijfsobject.Verdieping toegang',
+                                            verdieping_toegang)
 
     def map_aantal_bouwlagen(self, aantal_bouwlagen):
         """
         Return the indicator associated with BAG Verblijfsobject aantal bouwlagen. if any.
         """
-        return self._get_indicator_by_range('Bouwlagen pand', 'Verblijfsobject.Aantal bouwlagen', aantal_bouwlagen)
+        return self._get_indicator_by_range('Bouwlagen pand',
+                                            'Verblijfsobject.Aantal bouwlagen',
+                                            aantal_bouwlagen)
 
     def json(self):
         return self.mapping

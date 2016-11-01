@@ -1,163 +1,163 @@
 {
-    "_buurtcombinatie": {
-        "_display": "Bijlmer Oost (E,G,K) (94)",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052063/"
-            }
-        },
-        "dataset": "gebieden",
-        "naam": "Bijlmer Oost (E,G,K)"
-    },
-    "_display": "1e Glanshof 1",
-    "_gemeente": {
-        "_display": "Amsterdam",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
-            }
-        },
-        "code": "0363",
-        "dataset": "bag"
-    },
+  "_buurtcombinatie": {
+    "_display": "Bijlmer Oost (E,G,K) (94)",
     "_links": {
-        "self": {
-            "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630001958552/"
-        }
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052063/"
+      }
     },
-    "_stadsdeel": {
-        "_display": "Zuidoost",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000016/"
-            }
-        },
-        "code": "T",
-        "dataset": "gebieden",
-        "naam": "Zuidoost"
+    "dataset": "gebieden",
+    "naam": "Bijlmer Oost (E,G,K)"
+  },
+  "_display": "1e Glanshof 1",
+  "_gemeente": {
+    "_display": "Amsterdam",
+    "_links": {
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+      }
     },
-    "_woonplaats": {
-        "_display": "Amsterdam",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
-            }
-        },
-        "dataset": "bag",
-        "landelijk_id": "3594"
+    "code": "0363",
+    "dataset": "bag"
+  },
+  "_links": {
+    "self": {
+      "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630001958552/"
+    }
+  },
+  "_stadsdeel": {
+    "_display": "Zuidoost",
+    "_links": {
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000016/"
+      }
     },
-    "aantal_kamers": 5,
-    "adressen": {
-        "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630001958552"
-    },
-    "begin_geldigheid": "2006-07-01",
-    "beperkingen": {
-        "count": 0,
-        "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630001958552"
-    },
-    "bouwblok": {
-        "_display": "UL35",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012099868/"
-            }
-        },
-        "dataset": "gebieden",
-        "id": "03630012099868"
-    },
-    "bouwlaag_toegang": 0,
-    "bouwlagen": 3,
-    "bron": null,
-    "buurt": {
-        "_display": "Grunder/Koningshoef (T94i)",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000723/"
-            }
-        },
-        "code": "94i",
-        "dataset": "gebieden",
-        "naam": "Grunder/Koningshoef"
+    "code": "T",
+    "dataset": "gebieden",
+    "naam": "Zuidoost"
+  },
+  "_woonplaats": {
+    "_display": "Amsterdam",
+    "_links": {
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+      }
     },
     "dataset": "bag",
-    "date_modified": "2016-07-10T22:12:49.707474Z",
-    "document_mutatie": "2006-07-01",
-    "document_nummer": "ST00000092",
-    "eigendomsverhouding": {
-        "code": "02",
-        "omschrijving": "Eigendom"
+    "landelijk_id": "3594"
+  },
+  "aantal_kamers": 5,
+  "adressen": {
+    "count": 1,
+    "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630001958552"
+  },
+  "begin_geldigheid": "2006-07-01",
+  "beperkingen": {
+    "count": 0,
+    "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630001958552"
+  },
+  "bouwblok": {
+    "_display": "UL35",
+    "_links": {
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012099868/"
+      }
     },
-    "einde_geldigheid": null,
-    "financieringswijze": null,
-    "gebruik": {
-        "code": "1800",
-        "omschrijving": "woning"
+    "dataset": "gebieden",
+    "id": "03630012099868"
+  },
+  "bouwlaag_toegang": 0,
+  "bouwlagen": 3,
+  "bron": null,
+  "buurt": {
+    "_display": "Grunder/Koningshoef (T94i)",
+    "_links": {
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000723/"
+      }
     },
-    "gebruiksdoel": {
-        "code": "1010",
-        "omschrijving": "BEST-woning"
+    "code": "94i",
+    "dataset": "gebieden",
+    "naam": "Grunder/Koningshoef"
+  },
+  "dataset": "bag",
+  "date_modified": "2016-07-10T22:12:49.707474Z",
+  "document_mutatie": "2006-07-01",
+  "document_nummer": "ST00000092",
+  "eigendomsverhouding": {
+    "code": "02",
+    "omschrijving": "Eigendom"
+  },
+  "einde_geldigheid": null,
+  "financieringswijze": null,
+  "gebruik": {
+    "code": "1800",
+    "omschrijving": "woning"
+  },
+  "gebruiksdoel": {
+    "code": "1010",
+    "omschrijving": "BEST-woning"
+  },
+  "geometrie": {
+    "coordinates": [
+      127197.0,
+      481669.0
+    ],
+    "type": "Point"
+  },
+  "hoofdadres": {
+    "_display": "1e Glanshof 1",
+    "_links": {
+      "self": {
+        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000525995/"
+      }
     },
-    "geometrie": {
-        "coordinates": [
-            127197.0,
-            481669.0
-        ],
-        "type": "Point"
-    },
-    "hoofdadres": {
-        "_display": "1e Glanshof 1",
-        "_links": {
-            "self": {
-                "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000525995/"
-            }
-        },
-        "dataset": "bag",
-        "hoofdadres": true,
-        "landelijk_id": "0363200000525995"
-    },
-    "kadastrale_objecten": {
-        "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630001958552"
-    },
-    "ligging": {
-        "code": "03",
-        "omschrijving": "Tussengebouw"
-    },
-    "locatie_ingang": null,
-    "mutatie_gebruiker": "DBI",
-    "oppervlakte": 102,
-    "panden": {
-        "count": 1,
-        "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630001958552"
-    },
-    "rechten": {
-        "count": 3,
-        "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630001958552"
-    },
-    "reden_afvoer": null,
-    "reden_opvoer": {
-        "code": "31",
-        "omschrijving": "Ontstaan door nieuwbouw"
-    },
-    "sleutelverzendend": "03630001958552",
-    "status": {
-        "code": "21",
-        "omschrijving": "Verblijfsobject in gebruik"
-    },
-    "status_coordinaat": {
-        "code": "DEF",
-        "omschrijving": "Definitief punt"
-    },
-    "toegang": {
-        "code": "08",
-        "omschrijving": "Begane grond (08)"
-    },
-    "type_woonobject": {
-        "code": "E",
-        "omschrijving": "Eengezinswoning"
-    },
-    "verblijfsobjectidentificatie": "0363010001958552",
-    "verhuurbare_eenheden": null,
-    "woningvoorraad": true
+    "dataset": "bag",
+    "hoofdadres": true,
+    "landelijk_id": "0363200000525995"
+  },
+  "kadastrale_objecten": {
+    "count": 1,
+    "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630001958552"
+  },
+  "ligging": {
+    "code": "03",
+    "omschrijving": "Tussengebouw"
+  },
+  "locatie_ingang": null,
+  "mutatie_gebruiker": "DBI",
+  "oppervlakte": 102,
+  "panden": {
+    "count": 1,
+    "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630001958552"
+  },
+  "rechten": {
+    "count": 3,
+    "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630001958552"
+  },
+  "reden_afvoer": null,
+  "reden_opvoer": {
+    "code": "31",
+    "omschrijving": "Ontstaan door nieuwbouw"
+  },
+  "sleutelverzendend": "03630001958552",
+  "status": {
+    "code": "21",
+    "omschrijving": "Verblijfsobject in gebruik"
+  },
+  "status_coordinaat": {
+    "code": "DEF",
+    "omschrijving": "Definitief punt"
+  },
+  "toegang": {
+    "code": "08",
+    "omschrijving": "Begane grond (08)"
+  },
+  "type_woonobject": {
+    "code": "E",
+    "omschrijving": "Eengezinswoning"
+  },
+  "verblijfsobjectidentificatie": "0363010001958552",
+  "verhuurbare_eenheden": null,
+  "woningvoorraad": true
 }

@@ -23,7 +23,8 @@ class LiveMappingTest(TestCase):
         self.assertContainsValues(results)
 
     def test_mapping_verdieping_toegang(self):
-        results = [self.mapping.map_verdieping_toegang(i) for i in range(-20, 20)]
+        results = [self.mapping.map_verdieping_toegang(i) for i in
+                   range(-20, 20)]
         self.assertContainsValues(results)
 
     def test_mapping_pand_status(self):
@@ -31,14 +32,17 @@ class LiveMappingTest(TestCase):
         self.assertContainsValues(results)
 
     def test_gebruikscode(self):
-        results = [self.mapping.map_gebruikscode(str(i)) for i in range(1000, 4000)]
+        results = [self.mapping.map_gebruikscode(str(i)) for i in
+                   range(1000, 4000)]
         self.assertContainsValues(results)
 
     def test_gebruiksdoel(self):
-        results = [self.mapping.map_gebruiksdoel(str(i)) for i in range(1000, 4000)]
+        results = [self.mapping.map_gebruiksdoel(str(i)) for i in
+                   range(1000, 4000)]
         self.assertContainsValues(results)
 
     def test_mapping_beperking(self):
-        codes = ['KW', 'HV', 'OH', 'WV', 'WG']  # a bit more brittle than the others, sorry
+        codes = ['KW', 'HV', 'OH', 'WV',
+                 'WG']  # a bit more brittle than the others, sorry
         results = [self.mapping.map_beperking(c) for c in codes]
         self.assertContainsValues(results)

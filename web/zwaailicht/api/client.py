@@ -92,10 +92,12 @@ class Client(object):
 
         res = requests.get(url)
         if not res.ok:
-            log.warn("Could not retrieve panden for VBO %s from %s", verblijfsobject, url)
+            log.warn("Could not retrieve panden for VBO %s from %s",
+                     verblijfsobject, url)
             return []
 
-        pand_urls = [obj.get('_links', {}).get('self', {}).get('href') for obj in res.json().get('results', [])]
+        pand_urls = [obj.get('_links', {}).get('self', {}).get('href') for obj
+                     in res.json().get('results', [])]
         pand_responses = [requests.get(u) for u in pand_urls]
 
         return [Pand(res.json()) for res in pand_responses if res.ok]
@@ -110,10 +112,12 @@ class Client(object):
 
         res = requests.get(url)
         if not res.ok:
-            log.warn("Could not retrieve beperkingen for VBO %s from %s", verblijfsobject, url)
+            log.warn("Could not retrieve beperkingen for VBO %s from %s",
+                     verblijfsobject, url)
             return []
 
-        beperking_urls = [obj.get('_links', {}).get('self', {}).get('href') for obj in res.json().get('results', [])]
+        beperking_urls = [obj.get('_links', {}).get('self', {}).get('href') for
+                          obj in res.json().get('results', [])]
         beperking_responses = [requests.get(u) for u in beperking_urls]
 
         return [Beperking(res.json()) for res in beperking_responses if res.ok]

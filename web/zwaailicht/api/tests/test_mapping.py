@@ -5,7 +5,6 @@ from .. import mapping
 
 
 class RangeParserTest(TestCase):
-
     def test_table(self):
         table = {
             '..-3': 'really negative',
@@ -35,7 +34,8 @@ class RangeParserTest(TestCase):
             value = test_case[0]
             expected = test_case[1]
             result = mapping.get_from_table_by_range(table, value)
-            self.assertEqual(expected, result, "Wrong result for {}".format(value))
+            self.assertEqual(expected, result,
+                             "Wrong result for {}".format(value))
 
 
 @override_settings(
@@ -136,4 +136,3 @@ class MappingTest(TestCase):
             "aanvullende_informatie": "Aantal bouwlagen: 100",
             "label": "Hoog gebouw"
         }, indicator)
-

@@ -1,160 +1,160 @@
 {
+  "_links": {
+    "self": {
+      "href": "http://api/bag/verblijfsobject/03630000998532/"
+    }
+  },
+  "_display": "Abberdaan 204",
+  "sleutelverzendend": "03630000998532",
+  "verblijfsobjectidentificatie": "0363010000998532",
+  "date_modified": "2016-07-06T22:12:24.261169Z",
+  "document_mutatie": "2010-09-09",
+  "document_nummer": "GV00000406",
+  "begin_geldigheid": "2010-09-09",
+  "einde_geldigheid": null,
+  "mutatie_gebruiker": "DBI",
+  "status": {
+    "code": "21",
+    "omschrijving": "Verblijfsobject in gebruik"
+  },
+  "bron": null,
+  "geometrie": {
+    "type": "Point",
+    "coordinates": [
+      114054.0,
+      489530.0
+    ]
+  },
+  "gebruiksdoel": {
+    "code": "1400",
+    "omschrijving": "BEST-industriefunctie"
+  },
+  "oppervlakte": 200,
+  "bouwlaag_toegang": 0,
+  "status_coordinaat": {
+    "code": "DEF",
+    "omschrijving": "Definitief punt"
+  },
+  "verhuurbare_eenheden": null,
+  "bouwlagen": null,
+  "type_woonobject": {
+    "code": "",
+    "omschrijving": ""
+  },
+  "woningvoorraad": false,
+  "aantal_kamers": null,
+  "reden_afvoer": null,
+  "reden_opvoer": {
+    "code": "11",
+    "omschrijving": "Mutatie"
+  },
+  "eigendomsverhouding": {
+    "code": "01",
+    "omschrijving": "Huur"
+  },
+  "financieringswijze": null,
+  "gebruik": {
+    "code": "3170",
+    "omschrijving": "bedrijf"
+  },
+  "ligging": {
+    "code": "03",
+    "omschrijving": "Tussengebouw"
+  },
+  "locatie_ingang": null,
+  "toegang": null,
+  "hoofdadres": {
     "_links": {
-        "self": {
-            "href": "http://api/bag/verblijfsobject/03630000998532/"
-        }
+      "self": {
+        "href": "http://api/bag/nummeraanduiding/03630000481756/"
+      }
     },
     "_display": "Abberdaan 204",
-    "sleutelverzendend": "03630000998532",
-    "verblijfsobjectidentificatie": "0363010000998532",
-    "date_modified": "2016-07-06T22:12:24.261169Z",
-    "document_mutatie": "2010-09-09",
-    "document_nummer": "GV00000406",
-    "begin_geldigheid": "2010-09-09",
-    "einde_geldigheid": null,
-    "mutatie_gebruiker": "DBI",
-    "status": {
-        "code": "21",
-        "omschrijving": "Verblijfsobject in gebruik"
-    },
-    "bron": null,
-    "geometrie": {
-        "type": "Point",
-        "coordinates": [
-            114054.0,
-            489530.0
-        ]
-    },
-    "gebruiksdoel": {
-        "code": "1400",
-        "omschrijving": "BEST-industriefunctie"
-    },
-    "oppervlakte": 200,
-    "bouwlaag_toegang": 0,
-    "status_coordinaat": {
-        "code": "DEF",
-        "omschrijving": "Definitief punt"
-    },
-    "verhuurbare_eenheden": null,
-    "bouwlagen": null,
-    "type_woonobject": {
-        "code": "",
-        "omschrijving": ""
-    },
-    "woningvoorraad": false,
-    "aantal_kamers": null,
-    "reden_afvoer": null,
-    "reden_opvoer": {
-        "code": "11",
-        "omschrijving": "Mutatie"
-    },
-    "eigendomsverhouding": {
-        "code": "01",
-        "omschrijving": "Huur"
-    },
-    "financieringswijze": null,
-    "gebruik": {
-        "code": "3170",
-        "omschrijving": "bedrijf"
-    },
-    "ligging": {
-        "code": "03",
-        "omschrijving": "Tussengebouw"
-    },
-    "locatie_ingang": null,
-    "toegang": null,
-    "hoofdadres": {
-        "_links": {
-            "self": {
-                "href": "http://api/bag/nummeraanduiding/03630000481756/"
-            }
-        },
-        "_display": "Abberdaan 204",
-        "landelijk_id": "0363200000481756",
-        "hoofdadres": true,
-        "dataset": "bag"
-    },
-    "adressen": {
-        "count": 1,
-        "href": "http://api/bag/nummeraanduiding/?verblijfsobject=03630000998532"
-    },
-    "buurt": {
-        "_links": {
-            "self": {
-                "href": "http://api/gebieden/buurt/03630000000536/"
-            }
-        },
-        "_display": "Sloterdijk III West (F11d)",
-        "code": "11d",
-        "naam": "Sloterdijk III West",
-        "dataset": "gebieden"
-    },
-    "panden": {
-        "count": 1,
-        "href": "http://api/bag/pand/?verblijfsobjecten__id=0363010000998532"
-    },
-    "kadastrale_objecten": {
-        "count": 1,
-        "href": "http://api/brk/object/?verblijfsobjecten__id=03630000998532"
-    },
-    "rechten": {
-        "count": 7,
-        "href": "http://api/brk/zakelijk-recht/?verblijfsobjecten__id=03630000998532"
-    },
-    "beperkingen": {
-        "count": 0,
-        "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630000998532"
-    },
-    "bouwblok": {
-        "_links": {
-            "self": {
-                "href": "http://api/gebieden/bouwblok/03630012101021/"
-            }
-        },
-        "_display": "DE78",
-        "id": "03630012101021",
-        "dataset": "gebieden"
-    },
-    "_buurtcombinatie": {
-        "_links": {
-            "self": {
-                "href": "http://api/gebieden/buurtcombinatie/3630012052012/"
-            }
-        },
-        "_display": "Bedrijventerrein Sloterdijk (11)",
-        "naam": "Bedrijventerrein Sloterdijk",
-        "dataset": "gebieden"
-    },
-    "_stadsdeel": {
-        "_links": {
-            "self": {
-                "href": "http://api/gebieden/stadsdeel/03630011872037/"
-            }
-        },
-        "_display": "Nieuw-West",
-        "code": "F",
-        "naam": "Nieuw-West",
-        "dataset": "gebieden"
-    },
-    "_gemeente": {
-        "_links": {
-            "self": {
-                "href": "http://api/brk/gemeente/03630000000000/"
-            }
-        },
-        "_display": "Amsterdam",
-        "code": "0363",
-        "dataset": "bag"
-    },
-    "_woonplaats": {
-        "_links": {
-            "self": {
-                "href": "http://api/bag/woonplaats/03630022796658/"
-            }
-        },
-        "_display": "Amsterdam",
-        "landelijk_id": "3594",
-        "dataset": "bag"
-    },
+    "landelijk_id": "0363200000481756",
+    "hoofdadres": true,
     "dataset": "bag"
+  },
+  "adressen": {
+    "count": 1,
+    "href": "http://api/bag/nummeraanduiding/?verblijfsobject=03630000998532"
+  },
+  "buurt": {
+    "_links": {
+      "self": {
+        "href": "http://api/gebieden/buurt/03630000000536/"
+      }
+    },
+    "_display": "Sloterdijk III West (F11d)",
+    "code": "11d",
+    "naam": "Sloterdijk III West",
+    "dataset": "gebieden"
+  },
+  "panden": {
+    "count": 1,
+    "href": "http://api/bag/pand/?verblijfsobjecten__id=0363010000998532"
+  },
+  "kadastrale_objecten": {
+    "count": 1,
+    "href": "http://api/brk/object/?verblijfsobjecten__id=03630000998532"
+  },
+  "rechten": {
+    "count": 7,
+    "href": "http://api/brk/zakelijk-recht/?verblijfsobjecten__id=03630000998532"
+  },
+  "beperkingen": {
+    "count": 0,
+    "href": "http://api/wkpb/beperking/?verblijfsobjecten__id=03630000998532"
+  },
+  "bouwblok": {
+    "_links": {
+      "self": {
+        "href": "http://api/gebieden/bouwblok/03630012101021/"
+      }
+    },
+    "_display": "DE78",
+    "id": "03630012101021",
+    "dataset": "gebieden"
+  },
+  "_buurtcombinatie": {
+    "_links": {
+      "self": {
+        "href": "http://api/gebieden/buurtcombinatie/3630012052012/"
+      }
+    },
+    "_display": "Bedrijventerrein Sloterdijk (11)",
+    "naam": "Bedrijventerrein Sloterdijk",
+    "dataset": "gebieden"
+  },
+  "_stadsdeel": {
+    "_links": {
+      "self": {
+        "href": "http://api/gebieden/stadsdeel/03630011872037/"
+      }
+    },
+    "_display": "Nieuw-West",
+    "code": "F",
+    "naam": "Nieuw-West",
+    "dataset": "gebieden"
+  },
+  "_gemeente": {
+    "_links": {
+      "self": {
+        "href": "http://api/brk/gemeente/03630000000000/"
+      }
+    },
+    "_display": "Amsterdam",
+    "code": "0363",
+    "dataset": "bag"
+  },
+  "_woonplaats": {
+    "_links": {
+      "self": {
+        "href": "http://api/bag/woonplaats/03630022796658/"
+      }
+    },
+    "_display": "Amsterdam",
+    "landelijk_id": "3594",
+    "dataset": "bag"
+  },
+  "dataset": "bag"
 }
