@@ -22,5 +22,5 @@ def schema_view(request):
 urlpatterns = [
     url(r'^status/health', views.health_check),
     url(r'^zwaailicht/', include(api.urls.router.urls)),
-    url('^zwaailicht/docs/$', schema_view),
+    url('^zwaailicht/docs/api-docs/$', schema_view),
 ]
