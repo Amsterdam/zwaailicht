@@ -40,8 +40,8 @@ INSTALLED_APPS = [
                      'django.contrib.staticfiles',
 
                      'rest_framework',
-                     'django_jenkins',
                      'rest_framework_swagger',
+
                      'django_extensions',
 
                  ] + PROJECT_APPS
