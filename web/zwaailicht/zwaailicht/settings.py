@@ -117,11 +117,45 @@ VBO_URI_TEMPLATE = os.environ.get(
 
 MAPPING_FILE = 'mapping.json'
 
+# SWAGGER
+
+swag_path = 'api-acc.datapunt.amsterdam.nl/zwaailicht/docs'
+
+if DEBUG:
+    swag_path = '127.0.0.1:8000/zwaailicht/docs'
+
 SWAGGER_SETTINGS = {
-    'exclude_url_names': [
-        'api-root',
-        'status_pand-list',
-        'gebruik-list',
-        'bouwlagen-list',
+    'exclude_namespaces': [],
+    'api_version': '0.1',
+    'api_path': '/',
+
+    'enabled_methods': [
+        'get',
     ],
+
+    'api_key': '',
+    'USE_SESSION_AUTH': False,
+    'VALIDATOR_URL': None,
+
+    'is_authenticated': False,
+    'is_superuser': False,
+
+    'unauthenticated_user': 'django.contrib.auth.models.AnonymousUser',
+    'permission_denied_handler': None,
+    'resource_access_handler': None,
+
+    'protocol': 'https' if not DEBUG else '',
+    'base_path': swag_path,
+
+    'info': {
+        'contact': 'atlas.basisinformatie@amsterdam.nl',
+        'description': 'This is the Zwaailicht API server.',
+        'license': 'Not known yet',
+        'licenseUrl': '://www.amsterdam.nl/stelselpedia/',
+        'termsOfServiceUrl': 'https://atlas.amsterdam.nl/terms/',
+        'title': 'Zwaailicht',
+    },
+
+    'doc_expansion': 'list',
 }
+
