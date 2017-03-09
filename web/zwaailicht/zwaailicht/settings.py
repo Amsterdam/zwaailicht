@@ -32,19 +32,19 @@ PROJECT_APPS = [
     'api',
 ]
 
-INSTALLED_APPS = [
-                     'django.contrib.auth',
-                     'django.contrib.contenttypes',
-                     'django.contrib.sessions',
-                     'django.contrib.messages',
-                     'django.contrib.staticfiles',
+INSTALLED_APPS = PROJECT_APPS + [
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 
-                     'rest_framework',
-                     'rest_framework_swagger',
+    'rest_framework',
+    'rest_framework_swagger',
 
-                     'django_extensions',
+    'django_extensions',
 
-                 ] + PROJECT_APPS
+]
 
 MIDDLEWARE_CLASSES = [
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -158,4 +158,3 @@ SWAGGER_SETTINGS = {
 
     'doc_expansion': 'list',
 }
-
