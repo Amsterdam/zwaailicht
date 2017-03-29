@@ -12,4 +12,4 @@ python manage.py collectstatic --noinput
 yes yes | python manage.py migrate --noinput
 
 # run uwsgi
-exec uwsgi --ini /app/uwsgi.ini
+exec uwsgi
