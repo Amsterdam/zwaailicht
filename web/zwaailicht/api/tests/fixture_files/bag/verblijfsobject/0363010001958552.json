@@ -3,7 +3,7 @@
     "_display": "Bijlmer Oost (E,G,K) (94)",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052063/"
+        "href": "https://api.data.amsterdam.nl/gebieden/buurtcombinatie/3630012052063/"
       }
     },
     "dataset": "gebieden",
@@ -14,7 +14,7 @@
     "_display": "Amsterdam",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+        "href": "https://api.data.amsterdam.nl/brk/gemeente/03630000000000/"
       }
     },
     "code": "0363",
@@ -22,14 +22,14 @@
   },
   "_links": {
     "self": {
-      "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630001958552/"
+      "href": "https://api.data.amsterdam.nl/bag/verblijfsobject/03630001958552/"
     }
   },
   "_stadsdeel": {
     "_display": "Zuidoost",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000016/"
+        "href": "https://api.data.amsterdam.nl/gebieden/stadsdeel/03630000000016/"
       }
     },
     "code": "T",
@@ -40,7 +40,7 @@
     "_display": "Amsterdam",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+        "href": "https://api.data.amsterdam.nl/bag/woonplaats/03630022796658/"
       }
     },
     "dataset": "bag",
@@ -49,18 +49,18 @@
   "aantal_kamers": 5,
   "adressen": {
     "count": 1,
-    "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630001958552"
+    "href": "https://api.data.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630001958552"
   },
   "begin_geldigheid": "2006-07-01",
   "beperkingen": {
     "count": 0,
-    "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630001958552"
+    "href": "https://api.data.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630001958552"
   },
   "bouwblok": {
     "_display": "UL35",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012099868/"
+        "href": "https://api.data.amsterdam.nl/gebieden/bouwblok/03630012099868/"
       }
     },
     "dataset": "gebieden",
@@ -73,7 +73,7 @@
     "_display": "Grunder/Koningshoef (T94i)",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000723/"
+        "href": "https://api.data.amsterdam.nl/gebieden/buurt/03630000000723/"
       }
     },
     "code": "94i",
@@ -109,7 +109,7 @@
     "_display": "1e Glanshof 1",
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000525995/"
+        "href": "https://api.data.amsterdam.nl/bag/nummeraanduiding/03630000525995/"
       }
     },
     "dataset": "bag",
@@ -118,7 +118,7 @@
   },
   "kadastrale_objecten": {
     "count": 1,
-    "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630001958552"
+    "href": "https://api.data.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630001958552"
   },
   "ligging": {
     "code": "03",
@@ -129,11 +129,11 @@
   "oppervlakte": 102,
   "panden": {
     "count": 1,
-    "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630001958552"
+    "href": "https://api.data.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630001958552"
   },
   "rechten": {
     "count": 3,
-    "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630001958552"
+    "href": "https://api.data.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630001958552"
   },
   "reden_afvoer": null,
   "reden_opvoer": {
