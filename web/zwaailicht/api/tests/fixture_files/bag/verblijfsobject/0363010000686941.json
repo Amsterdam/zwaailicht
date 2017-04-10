@@ -1,7 +1,7 @@
 {
   "_links": {
     "self": {
-      "href": "https://api.datapunt.amsterdam.nl/bag/verblijfsobject/03630000686941/"
+      "href": "https://api.data.amsterdam.nl/bag/verblijfsobject/03630000686941/"
     }
   },
   "_display": "Jan Tooropstraat 164",
@@ -60,7 +60,7 @@
   "hoofdadres": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000148754/"
+        "href": "https://api.data.amsterdam.nl/bag/nummeraanduiding/03630000148754/"
       }
     },
     "_display": "Jan Tooropstraat 164",
@@ -70,12 +70,12 @@
   },
   "adressen": {
     "count": 1,
-    "href": "https://api.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000686941"
+    "href": "https://api.data.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000686941"
   },
   "buurt": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/buurt/03630000000470/"
+        "href": "https://api.data.amsterdam.nl/gebieden/buurt/03630000000470/"
       }
     },
     "_display": "Lucas/Andreasziekenhuis e.o. (F86f)",
@@ -85,24 +85,24 @@
   },
   "panden": {
     "count": 1,
-    "href": "https://api.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000686941"
+    "href": "https://api.data.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000686941"
   },
   "kadastrale_objecten": {
     "count": 1,
-    "href": "https://api.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000686941"
+    "href": "https://api.data.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000686941"
   },
   "rechten": {
     "count": 2,
-    "href": "https://api.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000686941"
+    "href": "https://api.data.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000686941"
   },
   "beperkingen": {
     "count": 0,
-    "href": "https://api.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000686941"
+    "href": "https://api.data.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000686941"
   },
   "bouwblok": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/bouwblok/03630012097250/"
+        "href": "https://api.data.amsterdam.nl/gebieden/bouwblok/03630012097250/"
       }
     },
     "_display": "EA04",
@@ -112,7 +112,7 @@
   "_buurtcombinatie": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052083/"
+        "href": "https://api.data.amsterdam.nl/gebieden/buurtcombinatie/3630012052083/"
       }
     },
     "_display": "Overtoomse Veld (86)",
@@ -122,7 +122,7 @@
   "_stadsdeel": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/gebieden/stadsdeel/03630011872037/"
+        "href": "https://api.data.amsterdam.nl/gebieden/stadsdeel/03630011872037/"
       }
     },
     "_display": "Nieuw-West",
@@ -133,7 +133,7 @@
   "_gemeente": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+        "href": "https://api.data.amsterdam.nl/brk/gemeente/03630000000000/"
       }
     },
     "_display": "Amsterdam",
@@ -143,7 +143,7 @@
   "_woonplaats": {
     "_links": {
       "self": {
-        "href": "https://api.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+        "href": "https://api.data.amsterdam.nl/bag/woonplaats/03630022796658/"
       }
     },
     "_display": "Amsterdam",

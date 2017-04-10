@@ -113,13 +113,13 @@ STATIC_ROOT = '/static/'
 
 VBO_URI_TEMPLATE = os.environ.get(
     'VBO_URI_TEMPLATE',
-    "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/")
+    "https://acc.api.data.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/")
 
 MAPPING_FILE = 'mapping.json'
 
 # SWAGGER
 
-swag_path = 'api-acc.datapunt.amsterdam.nl/zwaailicht/docs'
+swag_path = 'acc.api.data.amsterdam.nl/zwaailicht/docs'
 
 if DEBUG:
     swag_path = '127.0.0.1:8000/zwaailicht/docs'

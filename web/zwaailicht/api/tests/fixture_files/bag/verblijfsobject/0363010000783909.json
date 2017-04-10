@@ -3,7 +3,7 @@
     "_display": "Jordaan (06)",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/buurtcombinatie/3630012052037/"
+        "href": "https://acc.api.data.amsterdam.nl/gebieden/buurtcombinatie/3630012052037/"
       }
     },
     "dataset": "gebieden",
@@ -14,7 +14,7 @@
     "_display": "Amsterdam",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/brk/gemeente/03630000000000/"
+        "href": "https://acc.api.data.amsterdam.nl/brk/gemeente/03630000000000/"
       }
     },
     "code": "0363",
@@ -22,14 +22,14 @@
   },
   "_links": {
     "self": {
-      "href": "https://api-acc.datapunt.amsterdam.nl/bag/verblijfsobject/03630000783909/"
+      "href": "https://acc.api.data.amsterdam.nl/bag/verblijfsobject/03630000783909/"
     }
   },
   "_stadsdeel": {
     "_display": "Centrum",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/stadsdeel/03630000000018/"
+        "href": "https://acc.api.data.amsterdam.nl/gebieden/stadsdeel/03630000000018/"
       }
     },
     "code": "A",
@@ -40,7 +40,7 @@
     "_display": "Amsterdam",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/bag/woonplaats/03630022796658/"
+        "href": "https://acc.api.data.amsterdam.nl/bag/woonplaats/03630022796658/"
       }
     },
     "dataset": "bag",
@@ -49,18 +49,18 @@
   "aantal_kamers": 3,
   "adressen": {
     "count": 1,
-    "href": "https://api-acc.datapunt.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000783909"
+    "href": "https://acc.api.data.amsterdam.nl/bag/nummeraanduiding/?verblijfsobject=03630000783909"
   },
   "begin_geldigheid": "2012-08-09",
   "beperkingen": {
     "count": 2,
-    "href": "https://api-acc.datapunt.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000783909"
+    "href": "https://acc.api.data.amsterdam.nl/wkpb/beperking/?verblijfsobjecten__id=03630000783909"
   },
   "bouwblok": {
     "_display": "YJ47",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/bouwblok/03630012100671/"
+        "href": "https://acc.api.data.amsterdam.nl/gebieden/bouwblok/03630012100671/"
       }
     },
     "dataset": "gebieden",
@@ -73,7 +73,7 @@
     "_display": "Bloemgrachtbuurt (A06c)",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/gebieden/buurt/03630000000500/"
+        "href": "https://acc.api.data.amsterdam.nl/gebieden/buurt/03630000000500/"
       }
     },
     "code": "06c",
@@ -112,7 +112,7 @@
     "_display": "Prinsengracht 128B",
     "_links": {
       "self": {
-        "href": "https://api-acc.datapunt.amsterdam.nl/bag/nummeraanduiding/03630000392601/"
+        "href": "https://acc.api.data.amsterdam.nl/bag/nummeraanduiding/03630000392601/"
       }
     },
     "dataset": "bag",
@@ -121,7 +121,7 @@
   },
   "kadastrale_objecten": {
     "count": 1,
-    "href": "https://api-acc.datapunt.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000783909"
+    "href": "https://acc.api.data.amsterdam.nl/brk/object/?verblijfsobjecten__id=03630000783909"
   },
   "ligging": {
     "code": "03",
@@ -132,11 +132,11 @@
   "oppervlakte": 134,
   "panden": {
     "count": 1,
-    "href": "https://api-acc.datapunt.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000783909"
+    "href": "https://acc.api.data.amsterdam.nl/bag/pand/?verblijfsobjecten__id=03630000783909"
   },
   "rechten": {
     "count": 2,
-    "href": "https://api-acc.datapunt.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000783909"
+    "href": "https://acc.api.data.amsterdam.nl/brk/zakelijk-recht/?verblijfsobjecten__id=03630000783909"
   },
   "reden_afvoer": null,
   "reden_opvoer": null,
