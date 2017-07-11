@@ -152,7 +152,7 @@ SWAGGER_SETTINGS = {
         'description': 'This is the Zwaailicht API server.',
         'license': 'Not known yet',
         'licenseUrl': '://www.amsterdam.nl/stelselpedia/',
-        'termsOfServiceUrl': 'https://atlas.amsterdam.nl/terms/',
+        'termsOfServiceUrl': 'https://data.amsterdam.nl/terms/',
         'title': 'Zwaailicht',
     },
 
