@@ -17,7 +17,7 @@ RUN apt-get install -y \
 
 WORKDIR /app
 COPY requirements.txt /app/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --cert /usr/local/share/ca-certificates/extras/adp_rootca.crt -r requirements.txt
 
 USER datapunt
 COPY zwaailicht /app/
