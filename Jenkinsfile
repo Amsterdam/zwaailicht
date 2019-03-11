@@ -2,16 +2,16 @@
 
 def tryStep(String message, Closure block, Closure tearDown = null) {
     try {
-        block();
+        block()
     }
     catch (Throwable t) {
         slackSend message: "${env.JOB_NAME}: ${message} failure ${env.BUILD_URL}", channel: '#ci-channel', color: 'danger'
 
-        throw t;
+        throw t
     }
     finally {
         if (tearDown) {
-            tearDown();
+            tearDown()
         }
     }
 }
@@ -33,11 +33,14 @@ node {
 
     stage("Build image") {
         tryStep "build", {
-            def image = docker.build("build.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
-            image.push()
+            docker.withRegistry('https://repo.data.amsterdam.nl','docker-registry') {
+                def image = docker.build("datapunt/zwaailicht:${env.BUILD_NUMBER}", "web")
+                image.push()
+            }
         }
     }
 }
+
 
 String BRANCH = "${env.BRANCH_NAME}"
 
@@ -46,9 +49,11 @@ if (BRANCH == "master") {
     node {
         stage('Push acceptance image') {
             tryStep "image tagging", {
-                def image = docker.image("build.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
-                image.pull()
-                image.push("acceptance")
+                docker.withRegistry('https://repo.data.amsterdam.nl','docker-registry') {
+                    def image = docker.image("datapunt/zwaailicht:${env.BUILD_NUMBER}")
+                    image.pull()
+                    image.push("acceptance")
+                }
             }
         }
     }
@@ -65,7 +70,6 @@ if (BRANCH == "master") {
         }
     }
 
-
     stage('Waiting for approval') {
         slackSend channel: '#ci-channel', color: 'warning', message: 'Zwaailicht is waiting for Production Release - please confirm'
         input "Deploy to Production?"
@@ -74,10 +78,12 @@ if (BRANCH == "master") {
     node {
         stage('Push production image') {
             tryStep "image tagging", {
-                def image = docker.image("build.datapunt.amsterdam.nl:5000/datapunt/zwaailicht:${env.BUILD_NUMBER}")
-                image.pull()
-                image.push("production")
-                image.push("latest")
+                docker.withRegistry('https://repo.data.amsterdam.nl','docker-registry') {
+                def image = docker.image("datapunt/zwaailicht:${env.BUILD_NUMBER}")
+                    image.pull()
+                    image.push("production")
+                    image.push("latest")
+                }
             }
         }
     }
