@@ -2,7 +2,7 @@ Django==1.11.23
 PyYAML==4.2b1
 coreapi==2.1.1
 django-extensions==1.7.5
-djangorestframework==3.5.3
+djangorestframework==3.9.1
 django-rest-swagger==2.1.0
 itypes==1.1.0
 openapi-codec==1.2.1
