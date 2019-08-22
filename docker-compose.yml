@@ -5,9 +5,6 @@ services:
     ports:
       - "8000:8000"
     environment:
-      http_proxy:
-      https_proxy:
-      no_proxy:
       VBO_URI_TEMPLATE: "https://acc.api.data.amsterdam.nl/bag/verblijfsobject/{landelijk_id}/"
       UWSGI_HTTP: ":8000"
       UWSGI_MODULE: "zwaailicht.wsgi:application"
