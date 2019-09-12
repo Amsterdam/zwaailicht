@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 insecure_key = 'insecure'
 SECRET_KEY = os.getenv('HANDELSREGISTER_SECRET_KEY', insecure_key)
 
-DEBUG = SECRET_KEY == insecure_key
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
