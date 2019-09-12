@@ -20,9 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 insecure_key = 'insecure'
-SECRET_KEY = os.getenv('HANDELSREGISTER_SECRET_KEY', insecure_key)
+SECRET_KEY = os.environ['HANDELSREGISTER_SECRET_KEY']
 
-DEBUG = False
+DEBUG = SECRET_KEY == insecure_key
 
 ALLOWED_HOSTS = ['*']
 
