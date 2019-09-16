@@ -25,7 +25,7 @@ node {
     stage('Test') {
         tryStep "test", {
             sh "docker-compose -p zwaailicht build && " +
-               "docker-compose -p zwaailicht run -u root --rm web python manage.py test"
+               "SECRET_KEY=testing docker-compose -p zwaailicht run -u root --rm web python manage.py test"
         }, {
             sh "docker-compose down"
         }
