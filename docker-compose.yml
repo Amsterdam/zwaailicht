@@ -11,3 +11,4 @@ services:
       UWSGI_MASTER: 1
       UWSGI_STATIC_MAP: "/static=/static"
       UWSGI_PROCESSES: 4
+      SECRET_KEY: "insecure-key"
